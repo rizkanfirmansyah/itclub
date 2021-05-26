@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\{
-    Section,Submenu,Menu,Prestation,User,Division,ImageDivision,Alumni,Gallery,ImageGallery,Category,Member,Activity,Schedule,TestList,ScoreList,
+    Section,Submenu,Menu,Prestation,User,Division,ImageDivision,Alumni,Gallery,ImageGallery,Category,Member,Activity,Schedule,TestList,ScoreList,Mentor
     };
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
@@ -998,4 +998,74 @@ class TrashController extends Controller
      ScoreList::onlyTrashed()->where('id', $request->value)->forceDelete();
         return response()->json(['message' => 'Data berhasil di hapus', 'status' => 'success'], 200);
     }
+
+    public function mentor_get()
+    {
+        $mentor = Mentor::onlyTrashed();
+
+         return DataTables::of($mentor)
+            ->addIndexColumn()
+            ->addColumn('check', function ($mentor) {
+                return  '<div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad" class="custom-control-input" value="' . $mentor->id . '" name="id-checkbox" onchange="checkbox_this(this)" id="checkbox-' . $mentor->id . '" >
+                    <label for="checkbox-' . $mentor->id . '" class="custom-control-label">&nbsp;</label>
+                    </div>';
+            })
+            ->addColumn('btn', function ($mentor) {
+                return '
+            <a href="#" class="btn btn-icon btn-sm btn-primary" data-value="' . $mentor->id . '" id="edit"><i class="fas fa-edit"></i></a>
+            <a href="#" class="btn btn-icon btn-sm btn-danger" data-value="' . $mentor->id . '" id="delete"><i class="fas fa-trash"></i></a>
+            ';
+            })
+            ->addColumn('imageMentor', function ($mentor) {
+                return '<img src="' . $mentor->image() . '" width="50">';
+            })
+            ->addColumn('division', function ($mentor) {
+                $division = ' ';
+                foreach ($mentor->divisions as $value) {
+                    $division .= '<a class="text-white badge badge-primary m-1">
+                    ' . $value->name . '
+                  </a>';
+                }
+                return $division;
+            })
+            ->rawColumns(['check', 'btn','imageMentor','division'])
+            ->make(true);
+    }
+
+
+    public function mentor_recovery(Request $request)
+    {
+        activity('merecovery data sampah mentor');
+        if (is_array($request->value)) {
+            foreach ($request->value as $value) {
+                Mentor::onlyTrashed()->where('id', $value)->restore();
+            }
+            return response()->json(['message' => 'Data berhasil di restore', 'status' => 'success'], 200);
+        }
+         Mentor::onlyTrashed()->where('id', $request->value)->restore();
+        return response()->json(['message' => 'Data berhasil di restore', 'status' => 'success'], 200);
+    }
+
+    public function mentor_delete(Request $request)
+    {
+        activity('menghapus data sampah mentor');
+        if (is_array($request->value)) {
+            foreach ($request->value as $value) {
+               $mentor = Mentor::onlyTrashed()->where('id', $value)->first();
+                \Storage::delete($mentor->image);
+                $mentor->divisions()->detach();
+               $mentor->forceDelete();
+            }
+            return response()->json(['message' => 'Data berhasil di hapus', 'status' => 'success'], 200);
+        }
+      
+      $mentor = Mentor::onlyTrashed()->where('id', $request->value)->first();
+      \Storage::delete($mentor->image);
+      $mentor->divisions()->detach();
+      $mentor->forceDelete();
+        return response()->json(['message' => 'Data berhasil di hapus', 'status' => 'success'], 200);
+    }
+
+
 }

@@ -87,4 +87,9 @@ class TrashController extends Controller
     {
         return view('main.setting.score_trash');
     }
+
+    public function mentor()
+    {
+        return view('main.setting.mentor_trash');
+    }
 }

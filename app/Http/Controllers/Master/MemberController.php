@@ -12,6 +12,6 @@ class MemberController extends Controller
         $users = User::where('email_verified_at','!=',null)->get();
         $divisions = Division::get();
        
-        return view('main.master.members.member', compact('users','divisions'));
+        return view('main.master.profiles.member', compact('users','divisions'));
     }
 }

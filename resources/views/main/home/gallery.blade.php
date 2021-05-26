@@ -11,7 +11,7 @@
                            @foreach($galleries as $gallery) 
                             <div class="col-md-4 mt-4 down">
                                 <img src="{{$gallery->image()}}">
-                                <p class="my-2">{{$gallery->name}}, {{$gallery->created_at}}</p>
+                                <p class="my-2">{{$gallery->name}}</p>
                                 <a href="{{route('image.gallery', $gallery->slug)}}" class="btn btn-1">Lihat Selengkapnya</a>
                             </div>
                             @endforeach

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class GalleryRequest extends FormRequest
+class MentorRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,13 @@ class GalleryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string',
+            'name' => 'string|required',
+            'whatsapp' => 'nullable|numeric',
+            'birth_date' => 'nullable',
+            'sertifikasi' => 'nullable',
+            'gender' => 'nullable',
+            'instagram' => 'nullable',
+            'profession' => 'string|required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2000',
         ];
     }

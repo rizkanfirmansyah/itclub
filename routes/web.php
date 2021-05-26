@@ -24,6 +24,7 @@ use App\Http\Controllers\Master\GalleryController;
 use App\Http\Controllers\Master\DivisionController;
 use App\Http\Controllers\Master\ImageDivisionController;
 use App\Http\Controllers\Master\ImageGalleryController;
+use App\Http\Controllers\Master\MentorController;
 use App\Http\Controllers\Setting\ErrorController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +39,7 @@ use App\Http\Controllers\Api\PrestationController as ApiPrestationController;
 use App\Http\Controllers\Api\MemberController as ApiMemberController;
 use App\Http\Controllers\Api\AlumniController as ApiAlumniController;
 use App\Http\Controllers\Api\TrashController as ApiTrashController;
+use App\Http\Controllers\Api\MentorController as ApiMentorController;
 use App\Http\Controllers\Api\UserGuideController;
 use App\Http\Controllers\Auth\MailController;
 use App\Http\Controllers\Member\MemberController as MemberMemberController;
@@ -94,9 +96,11 @@ Route::group(['prefix' => '/master', 'middleware' => ['auth', 'access']], functi
     Route::get('/divisions/imagedivision', [ImageDivisionController::class, 'image_division']);
     Route::get('/galleries/gallery', [GalleryController::class, 'gallery']);
     Route::get('/galleries/imagegallery', [ImageGalleryController::class, 'image_gallery']);
-    Route::get('/members/member', [MemberController::class, 'member']);
-    Route::get('/members/alumni', [AlumniController::class, 'alumni']);
+    Route::get('/profiles/mentor', [MentorController::class, 'mentor']);
+    Route::get('/profiles/member', [MemberController::class, 'member']);
+    Route::get('/profiles/alumni', [AlumniController::class, 'alumni']);
     Route::get('/prestation', [PrestationController::class, 'prestation']);
+
 });
 
 Route::group(['prefix' => '/setting', 'middleware' => ['auth', 'access']], function () {
@@ -119,6 +123,7 @@ Route::group(['prefix' => '/setting', 'middleware' => ['auth', 'access']], funct
     Route::get('/trash/schedule', [TrashController::class, 'schedule']);
     Route::get('/trash/tests', [TrashController::class, 'tests']);
     Route::get('/trash/score', [TrashController::class, 'score']);
+    Route::get('/trash/mentor', [TrashController::class, 'mentor']);
 });
 
 Route::group(['prefix' => '/members', 'middleware' => 'auth'], function () {
@@ -314,6 +319,13 @@ Route::prefix('/api/v1')->group(function () {
             Route::delete('delete', [ApiPrestationController::class, 'destroy']);
         });
 
+        Route::prefix('mentor')->group(function () {
+            Route::get('get', [ApiMentorController::class, 'index']);
+            Route::post('insert', [ApiMentorController::class, 'store']);
+            Route::post('update', [ApiMentorController::class, 'update']);
+            Route::delete('delete', [ApiMentorController::class, 'destroy']);
+        });
+
         Route::prefix('alumni')->group(function () {
             Route::get('get', [ApiAlumniController::class, 'index']);
             Route::post('insert', [ApiAlumniController::class, 'store']);
@@ -393,6 +405,11 @@ Route::prefix('/api/v1')->group(function () {
             Route::get('score/get', [ApiTrashController::class, 'score_get']);
             Route::post('score/recovery', [ApiTrashController::class, 'score_recovery']);
             Route::delete('score/delete', [ApiTrashController::class, 'score_delete']);
+
+            Route::get('mentor/get', [ApiTrashController::class, 'mentor_get']);
+            Route::post('mentor/recovery', [ApiTrashController::class, 'mentor_recovery']);
+            Route::delete('mentor/delete', [ApiTrashController::class, 'mentor_delete']);
+
         });
     });
 

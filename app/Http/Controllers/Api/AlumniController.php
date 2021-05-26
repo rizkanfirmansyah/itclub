@@ -113,7 +113,7 @@ class AlumniController extends Controller
             \Storage::delete($alumni->image);
             $image = request()->file('image')->store('images/alumni');
         } elseif ($alumni->image) {
-            $image = $division->image;
+            $image = $alumni->image;
         } else {
             $image = null;
         }

@@ -6,31 +6,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Division extends Model
+class Mentor extends Model
 {
     use HasFactory,SoftDeletes;
-    
-    protected $table = 'divisions';
+
+    protected $table = 'mentors';
     protected $guarded = ['id','created_at','updated_at'];
     protected $casts = [
         'created_at' => 'datetime:Y-m-d H:m:s',
         'updated_at' => 'datetime:Y-m-d H:m:s',
-        'deleted_at' => 'datetime:Y-m-d H:m:s'
+        'deleted_at' => 'datetime:Y-m-d H:m:s',
     ];
 
-    public function members()
+      public function divisions()
     {
-        return $this->hasMany(Member::class, 'id');
-    }
-
-    public function images()
-    {
-        return $this->hasMany(ImageDivision::class);
-    }
-
-     public function created_by()
-    {
-        return $this->belongsTo(User::class, 'created_by')->withTrashed();
+        return $this->belongsToMany(Division::class)->withPivot('division_id', 'mentor_id');
     }
 
     public function image()
@@ -38,9 +28,8 @@ class Division extends Model
         return !$this->image ? asset('no-image.jpg') : asset("storage/" . $this->image);
     }
 
-     public function mentors()
+     public function created_by()
     {
-        return $this->belongsToMany(Mentor::class)->withPivot('division_id', 'mentor_id');
+        return $this->belongsTo(User::class, 'created_by')->withTrashed();
     }
-    
 }

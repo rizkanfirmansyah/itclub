@@ -78,4 +78,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Member::class);
     }
+
+    public function mentors()
+    {
+        return $this->hasMany(Mentor::class);
+    }
 }

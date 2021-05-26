@@ -9,6 +9,6 @@ class AlumniController extends Controller
 {
     public function alumni()
     {
-        return view('main.master.members.alumni');
+        return view('main.master.profiles.alumni');
     }
 }

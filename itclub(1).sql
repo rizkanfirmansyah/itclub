@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 10 Bulan Mei 2021 pada 19.33
+-- Waktu pembuatan: 25 Bulan Mei 2021 pada 15.23
 -- Versi server: 8.0.23-0ubuntu0.20.04.1
 -- Versi PHP: 7.4.3
 
@@ -113,7 +113,8 @@ INSERT INTO `access_user_menu` (`id`, `user_id`, `menu_id`, `created_by`, `delet
 (100, 1, 20, 1, '2021-04-20 08:41:49', '2021-04-20 08:28:38', '2021-04-20 08:41:49'),
 (101, 1, 11, 1, NULL, '2021-04-20 08:34:31', '2021-04-20 08:34:31'),
 (102, 1, 20, 1, NULL, '2021-04-20 08:41:52', '2021-04-20 08:41:52'),
-(103, 1, 21, 1, NULL, '2021-05-10 04:47:47', '2021-05-10 04:47:47');
+(103, 1, 21, 1, NULL, '2021-05-10 04:47:47', '2021-05-10 04:47:47'),
+(104, 1, 22, 1, NULL, '2021-05-25 07:25:45', '2021-05-25 07:25:45');
 
 -- --------------------------------------------------------
 
@@ -289,7 +290,9 @@ INSERT INTO `access_user_submenu` (`id`, `user_id`, `submenu_id`, `created_by`, 
 (101, 1, 32, 1, NULL, '2021-05-10 04:54:53', '2021-05-10 04:54:53'),
 (102, 1, 35, 1, NULL, '2021-05-10 04:54:56', '2021-05-10 04:54:56'),
 (103, 1, 34, 1, NULL, '2021-05-10 04:55:00', '2021-05-10 04:55:00'),
-(104, 1, 33, 1, NULL, '2021-05-10 04:55:03', '2021-05-10 04:55:03');
+(104, 1, 33, 1, NULL, '2021-05-10 04:55:03', '2021-05-10 04:55:03'),
+(105, 1, 36, 1, NULL, '2021-05-25 05:09:43', '2021-05-25 05:09:43'),
+(106, 1, 37, 1, NULL, '2021-05-25 06:07:27', '2021-05-25 06:07:27');
 
 -- --------------------------------------------------------
 
@@ -441,7 +444,148 @@ INSERT INTO `activities` (`id`, `user_id`, `url_access`, `description`, `browser
 (131, 1, '/api/v1/access/users/change/submenu', 'Menambah access submenu users', 'Mozilla Firefox', NULL, '2021-05-10 04:54:56', '105102113307'),
 (132, 1, '/api/v1/access/users/change/submenu', 'Menambah access submenu users', 'Mozilla Firefox', NULL, '2021-05-10 04:55:00', '105102149366'),
 (133, 1, '/api/v1/access/users/change/submenu', 'Menambah access submenu users', 'Mozilla Firefox', NULL, '2021-05-10 04:55:03', '105102132248'),
-(134, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Mozilla Firefox', NULL, '2021-05-10 04:59:13', '105102147747');
+(134, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Mozilla Firefox', NULL, '2021-05-10 04:59:13', '105102147747'),
+(135, 1, '/api/v1/access/change/section', 'Menghapus access section', 'Google Chrome', NULL, '2021-05-20 05:17:46', '105202148069'),
+(136, 1, '/api/v1/access/change/section', 'Menambah access section', 'Google Chrome', NULL, '2021-05-20 05:18:03', '105202126449'),
+(137, 1, '/api/v1/access/change/menu', 'Menghapus access menu', 'Google Chrome', NULL, '2021-05-20 05:18:09', '105202149516'),
+(138, 1, '/api/v1/access/change/section', 'Menghapus access section', 'Google Chrome', NULL, '2021-05-20 05:18:27', '105202138748'),
+(139, 1, '/api/v1/features/article/delete', 'menghapus data article', 'Google Chrome', NULL, '2021-05-20 05:18:57', '105202112415'),
+(140, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:00:36', '105202133480'),
+(141, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:00:55', '105202126538'),
+(142, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:02:39', '105202146683'),
+(143, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:02:53', '105202151934'),
+(144, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:03:25', '105202128117'),
+(145, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:03:48', '105202113223'),
+(146, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:06:19', '10520213945'),
+(147, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:07:59', '105202125351'),
+(148, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:08:31', '10520218313'),
+(149, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:08:45', '105202144649'),
+(150, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 06:10:26', '105202147684'),
+(151, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:12:26', '105202145026'),
+(152, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:15:24', '105202113068'),
+(153, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:18:26', '105202145949'),
+(154, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:18:46', '10520217249'),
+(155, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:19:06', '105202140255'),
+(156, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:19:14', '105202118538'),
+(157, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:19:45', '105202127981'),
+(158, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:20:01', '105202121563'),
+(159, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:20:10', '105202117911'),
+(160, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:30:16', '105202117329'),
+(161, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:30:27', '105202128240'),
+(162, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:30:37', '105202146992'),
+(163, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:30:51', '105202143917'),
+(164, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:33:33', '105202140077'),
+(165, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:34:13', '105202138616'),
+(166, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:34:31', '10520217129'),
+(167, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:34:49', '105202137531'),
+(168, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:34:59', '105202148240'),
+(169, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:35:08', '105202124287'),
+(170, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:35:23', '105202147697'),
+(171, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:35:53', '105202142480'),
+(172, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:36:02', '105202128633'),
+(173, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:36:12', '10520214056'),
+(174, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:36:23', '105202149987'),
+(175, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:36:37', '105202126840'),
+(176, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:36:55', '105202116430'),
+(177, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:37:18', '105202129052'),
+(178, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 06:44:16', '10520212370'),
+(179, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 06:45:46', '105202110744'),
+(180, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 06:46:33', '105202145702'),
+(181, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 06:47:14', '105202124796'),
+(182, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 06:48:05', '105202110308'),
+(183, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:48:49', '105202117841'),
+(184, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 06:48:56', '105202114184'),
+(185, 1, '/api/v1/prestation/insert', 'menambah data prestasi', 'Google Chrome', NULL, '2021-05-20 07:14:37', '105202146716'),
+(186, 1, '/api/v1/prestation/insert', 'menambah data prestasi', 'Google Chrome', NULL, '2021-05-20 07:15:08', '105202110596'),
+(187, 1, '/api/v1/prestation/insert', 'menambah data prestasi', 'Google Chrome', NULL, '2021-05-20 07:15:43', '105202121815'),
+(188, 1, '/api/v1/prestation/insert', 'menambah data prestasi', 'Google Chrome', NULL, '2021-05-20 07:16:10', '105202124897'),
+(189, 1, '/api/v1/prestation/delete', 'menghapus data prestasi', 'Google Chrome', NULL, '2021-05-20 07:16:27', '105202111536'),
+(190, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 07:17:19', '10520213603'),
+(191, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 07:17:34', '105202140961'),
+(192, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 07:18:19', '105202112609'),
+(193, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 07:18:50', '105202113740'),
+(194, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 07:19:17', '105202113418'),
+(195, 1, '/api/v1/division/update', 'mengedit data divisi', 'Google Chrome', NULL, '2021-05-20 07:19:53', '105202137313'),
+(196, 1, '/api/v1/division/delete', 'menghapus data divisi', 'Google Chrome', NULL, '2021-05-20 07:20:11', '105202128452'),
+(197, 1, '/api/v1/division/insert', 'menambah data divisi', 'Google Chrome', NULL, '2021-05-20 07:21:22', '105202123690'),
+(198, 1, '/api/v1/imageDivision/delete', 'menghapus data image Division', 'Google Chrome', NULL, '2021-05-20 07:21:51', '105202151760'),
+(199, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:22:27', '10520217216'),
+(200, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:22:42', '105202135192'),
+(201, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:23:15', '105202148814'),
+(202, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:23:28', '105202136880'),
+(203, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:24:12', '105202111072'),
+(204, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:24:31', '10520216063'),
+(205, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:25:33', '105202128982'),
+(206, 1, '/api/v1/imageDivision/delete', 'menghapus data image Division', 'Google Chrome', NULL, '2021-05-20 07:26:30', '105202132227'),
+(207, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:27:09', '105202131793'),
+(208, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:27:41', '105202123374'),
+(209, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:27:52', '105202137860'),
+(210, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:28:15', '105202122866'),
+(211, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:28:22', '105202111744'),
+(212, 1, '/api/v1/imageDivision/insert', 'menambah data image Division', 'Google Chrome', NULL, '2021-05-20 07:28:44', '105202110802'),
+(213, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Google Chrome', NULL, '2021-05-20 07:32:14', '105202131026'),
+(214, 1, '/api/v1/gallery/insert', 'menambah data gallery', 'Google Chrome', NULL, '2021-05-20 07:41:38', '105202115658'),
+(215, 1, '/api/v1/gallery/insert', 'menambah data gallery', 'Google Chrome', NULL, '2021-05-20 07:44:44', '105202145219'),
+(216, 1, '/api/v1/gallery/insert', 'menambah data gallery', 'Google Chrome', NULL, '2021-05-20 07:46:00', '105202121878'),
+(217, 1, '/api/v1/gallery/delete', 'menghapus data gallery', 'Google Chrome', NULL, '2021-05-20 07:46:12', '105202115168'),
+(218, 1, '/api/v1/gallery/insert', 'menambah data gallery', 'Google Chrome', NULL, '2021-05-20 07:46:33', '105202143790'),
+(219, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:30:45', '10520216696'),
+(220, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:31:02', '10520214581'),
+(221, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:31:21', '105202122361'),
+(222, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:31:30', '105202133385'),
+(223, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:31:36', '105202145368'),
+(224, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:31:48', '105202130824'),
+(225, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:31:53', '105202135636'),
+(226, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:32:00', '105202151970'),
+(227, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:32:05', '105202126651'),
+(228, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Google Chrome', NULL, '2021-05-20 08:33:32', '105202125054'),
+(229, 1, '/api/v1/gallery/update', 'mengedit data gallery', 'Google Chrome', NULL, '2021-05-20 10:11:17', '105202111789'),
+(230, 1, '/api/v1/features/article/update', 'mengubah data article', 'Google Chrome', NULL, '2021-05-21 08:14:10', '105212118554'),
+(231, 1, '/api/v1/features/article/update', 'mengubah data article', 'Google Chrome', NULL, '2021-05-21 08:14:11', '10521217762'),
+(232, 1, '/api/v1/features/article/insert', 'menambah data article', 'Google Chrome', NULL, '2021-05-21 08:17:10', '105212130655'),
+(233, 1, '/api/v1/features/article/insert', 'menambah data article', 'Google Chrome', NULL, '2021-05-21 08:22:43', '105212149494'),
+(234, 1, '/api/v1/features/article/insert', 'menambah data article', 'Google Chrome', NULL, '2021-05-21 08:26:45', '10521213721'),
+(235, 1, '/api/v1/features/article/insert', 'menambah data article', 'Google Chrome', NULL, '2021-05-21 08:29:41', '105212126001'),
+(236, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:20:16', '105212120793'),
+(237, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:20:43', '10521217293'),
+(238, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:20:52', '10521215300'),
+(239, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:21:07', '10521213988'),
+(240, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:21:41', '105212115088'),
+(241, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:21:43', '10521213958'),
+(242, 1, '/api/v1/imageGallery/delete', 'menghapus data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:21:49', '105212123250'),
+(243, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:22:01', '105212123422'),
+(244, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:22:11', '10521218053'),
+(245, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:22:20', '105212117721'),
+(246, 1, '/api/v1/imageGallery/insert', 'menambah data image Gallery', 'Google Chrome', NULL, '2021-05-21 11:22:33', '105212119718'),
+(247, 1, '/api/v1/submenu/insert', 'Menambah data submenu', 'Mozilla Firefox', NULL, '2021-05-25 05:08:46', '105252141194'),
+(248, 1, '/api/v1/access/users/change/submenu', 'Menambah access submenu users', 'Mozilla Firefox', NULL, '2021-05-25 05:09:43', '105252115489'),
+(249, 1, '/api/v1/mentor/insert', 'menambah data mentor', 'Mozilla Firefox', NULL, '2021-05-25 05:15:11', '10525217152'),
+(250, 1, '/api/v1/mentor/delete', 'menghapus data mentor', 'Mozilla Firefox', NULL, '2021-05-25 05:48:10', '10525216681'),
+(251, 1, '/api/v1/submenu/insert', 'Menambah data submenu', 'Mozilla Firefox', NULL, '2021-05-25 06:06:18', '105252149922'),
+(252, 1, '/api/v1/access/users/change/submenu', 'Menambah access submenu users', 'Mozilla Firefox', NULL, '2021-05-25 06:07:27', '105252130465'),
+(253, 1, '/api/v1/trash/mentor/delete', 'menghapus data sampah mentor', 'Mozilla Firefox', NULL, '2021-05-25 06:08:29', '10525215258'),
+(254, 1, '/api/v1/menu/insert', 'Menambah data menu', 'Mozilla Firefox', NULL, '2021-05-25 07:24:23', '105252110419'),
+(255, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-25 07:25:01', '105252131214'),
+(256, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-25 07:25:08', '10525217276'),
+(257, 1, '/api/v1/access/users/change/menu', 'Menambah access menu users', 'Mozilla Firefox', NULL, '2021-05-25 07:25:45', '105252129668'),
+(258, 1, '/api/v1/mentor/insert', 'menambah data mentor', 'Mozilla Firefox', NULL, '2021-05-25 07:27:14', '105252119004'),
+(259, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-25 07:42:53', '105252132012'),
+(260, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-25 07:43:21', '10525215806'),
+(261, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-25 07:43:36', '105252115269'),
+(262, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-25 07:43:46', '105252150158'),
+(263, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Mozilla Firefox', NULL, '2021-05-25 07:44:56', '105252138465'),
+(264, 1, '/api/v1/menu/delete', 'Menghapus data menu', 'Mozilla Firefox', NULL, '2021-05-25 07:45:29', '10525218360'),
+(265, 1, '/api/v1/mentor/insert', 'menambah data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:08:14', '105252131658'),
+(266, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:14:50', '105252151688'),
+(267, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:15:07', '105252148902'),
+(268, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:15:11', '105252130658'),
+(269, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:15:16', '105252150443'),
+(270, 1, '/api/v1/mentor/insert', 'menambah data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:16:02', '105252137043'),
+(271, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:20:42', '105252139962'),
+(272, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:21:06', '105252144091'),
+(273, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:21:25', '105252122395'),
+(274, 1, '/api/v1/mentor/delete', 'menghapus data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:21:42', '10525219965'),
+(275, 1, '/api/v1/trash/mentor/delete', 'menghapus data sampah mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:22:10', '10525214465');
 
 -- --------------------------------------------------------
 
@@ -451,13 +595,13 @@ INSERT INTO `activities` (`id`, `user_id`, `url_access`, `description`, `browser
 
 CREATE TABLE `alumnies` (
   `id` bigint UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `work` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `study` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `place` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -485,12 +629,16 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `user_id`, `title`, `content`, `thumbnail`, `slug`, `status`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(4, 1, '\"Cyber Security Awareness: How Phising Works?\" in Data Digital', '<h2>Selamat Datang di Ekstrakulikuler IT Club</h2><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>&lt;xmp&gt;&lt;h1&gt;hahahahahahahaha&lt;/h1&gt;&lt;/xmp&gt;</p><p>&nbsp;</p>', 'admin-202103231746-0.png', 'cyber-security', '200', NULL, '2021-03-23 10:46:05', '2021-04-11 15:27:17'),
+(4, 1, '\"Cyber Security Awareness: How Phising Works?\" in Data Digital', '<h2>Selamat Datang di Ekstrakulikuler IT Club</h2><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>Selamat Datang di Ekstrakulikuler IT Club</p><p>&lt;xmp&gt;&lt;h1&gt;hahahahahahahaha&lt;/h1&gt;&lt;/xmp&gt;</p><p>&nbsp;</p>', 'admin-202103231746-0.png', 'cyber-security', '200', '2021-05-20 05:18:56', '2021-03-23 10:46:05', '2021-05-20 05:18:56'),
 (6, 1, 'Membuat Kue', NULL, NULL, 'Membuat-Kue', '100', '2021-03-24 04:53:35', '2021-03-24 04:53:09', '2021-03-24 04:53:35'),
 (7, 1, 'awdwd', NULL, NULL, 'awdwd', '100', '2021-03-24 04:54:12', '2021-03-24 04:54:09', '2021-03-24 04:54:12'),
 (8, 1, 'awdwd', NULL, NULL, 'awdwd', '100', '2021-03-24 04:54:37', '2021-03-24 04:54:31', '2021-03-24 04:54:37'),
 (9, 2, 'Penggunaan Database pada website dinamic', NULL, NULL, 'Penggunaan-Database-pada-website-dinamic', '400', NULL, '2021-03-24 05:47:30', '2021-03-24 07:16:15'),
-(10, 29, 'E-commerce', '<p>Apa itu ecommerce? Electronic commerce atau ecommerce adalah segala aktivitas jual beli yang dilakukan melalui media elektronik. Meskipun sarananya meliputi televisi dan telepon, kini ecommerce lebih sering terjadi melalui internet.</p><p>Oleh karena pengertian tersebut, ada kesalahpahaman tentang ecommerce dan marketplace. Istilah ecommerce digunakan untuk mendeskripsikan semua transaksi yang memakai media elektronik.</p>', 'images/article/user1-202104112233-0.png', 'e-commerce', '200', NULL, '2021-04-11 15:33:33', '2021-04-11 15:34:34');
+(10, 1, 'Webinar Dunia Kerja&Kuliah', '<p>Webinar hari ini kita akan membahasa topik tentang dunia kerja dan kuliah, pemateri nya adalah alumni IT Club yaitu kang rival dan kang Yusuf yang insyallah ak ….</p>', 'images/article/admin-202105211514-0.png', 'webinar-dunia-kerjakuliah', '200', NULL, '2021-04-11 15:33:33', '2021-05-21 08:20:36'),
+(11, 1, 'CPD 2019/2020', '<p>Webinar hari ini kita akan membahas topik tentang dunia kerja dan kuliah, pemateri nya adalah alumni IT Club yaitu kang rival dan kang Yusuf yang insyallah akan memberikan ilmu nya sebaik mungkin kepada teman-teman semua agar siap di dunia kerja dan perkuliahan agar tidak kaget pada saat lulus nanti, banyak materi yang didapatkan pada saat seminar. Seminar ini di adakan karena masih banyaknya siswa/siswi SMK yang masih bingung arah untuk menentukan pilihannya setelah lulus, apakah harus bekerja, harus berkuliah atau bahkan harus kuliah sambil kerja, mana sih pilihan terbaik yang harus diambil? agar tidak bingung maka kita datangkan para narasumber yang tentunya bisa membuat anak-anak IT Club menjadi paham mana tujuan yang harus diambil nanti ketika lulus. Kesimpulan dari seminar hari ini adalah kita boleh bekerja tapi jangan lupakan cita-cita untuk berkuliah, karena kuliah sangatlah penting untuk nanti prospek kerja, agar bisa mendapatkan jenjang karir yang lebih baik lagi, \"Investasi terbaik adalah Ilmu\".</p>', 'images/article/admin-202105211517-0.png', 'cpd-20192020', '200', NULL, '2021-05-21 08:17:10', '2021-05-21 08:19:00'),
+(12, 1, 'Ujian Sertifikasi', '<p>Webinar hari ini kita akan membahasa topik tentang dunia kerja dan kuliah, pemateri nya adalah alumni IT Club yaitu kang rival dan kang Yusuf yang insyallah ak ….</p>', 'images/article/admin-202105211522-0.png', 'ujian-sertifikasi', '200', NULL, '2021-05-21 08:22:41', '2021-05-21 08:24:35'),
+(13, 1, 'Sertijab 2019-2020', '<p>Ekstrakurikuler IT Club melaksanakan Serah Terima Jabatan (Sertijab) Pengurus Organisasi Mahasiswa periode 2019 yang dilaksanakan pada Sabtu, 26 Januari 2019 di ruang kelas RC.1.1. Sertijab dibuka dengan sambutan oleh pembimbing yaitu Bapak Herdian Nuryansyah Penandatangan sertijab diwakili oleh Ketua …...</p>', 'images/article/admin-202105211526-0.png', 'sertijab-2019-2020', '200', NULL, '2021-05-21 08:26:44', '2021-05-21 08:27:09'),
+(14, 1, 'Perkenalan Ekskul IT Club', '<p>Ekstrakurikuler IT Club melaksanakan Serah Terima Jabatan (Sertijab) Pengurus Organisasi Mahasiswa periode 2019 yang dilaksanakan pada Sabtu, 26 Januari 2019 di ruang kelas RC.1.1. Sertijab dibuka dengan sambutan oleh pembimbing yaitu Bapak Herdian Nuryansyah Penandatangan sertijab diwakili oleh Ketua …...</p>', 'images/article/admin-202105211529-0.png', 'perkenalan-ekskul-it-club', '200', NULL, '2021-05-21 08:29:41', '2021-05-21 08:29:57');
 
 -- --------------------------------------------------------
 
@@ -524,7 +672,22 @@ INSERT INTO `blog_category` (`blog_id`, `category_id`, `created_at`, `updated_at
 (10, 3, '2021-04-11 15:33:33', NULL),
 (10, 4, '2021-04-11 15:33:33', NULL),
 (10, 5, '2021-04-11 15:33:33', NULL),
-(10, 6, '2021-04-11 15:33:33', NULL);
+(10, 6, '2021-04-11 15:33:33', NULL),
+(11, 3, '2021-05-21 08:17:10', NULL),
+(11, 5, '2021-05-21 08:17:10', NULL),
+(11, 9, '2021-05-21 08:17:10', NULL),
+(12, 1, '2021-05-21 08:22:42', NULL),
+(12, 3, '2021-05-21 08:22:42', NULL),
+(12, 5, '2021-05-21 08:22:42', NULL),
+(12, 9, '2021-05-21 08:22:42', NULL),
+(13, 1, '2021-05-21 08:26:45', NULL),
+(13, 3, '2021-05-21 08:26:45', NULL),
+(13, 5, '2021-05-21 08:26:45', NULL),
+(13, 9, '2021-05-21 08:26:45', NULL),
+(14, 1, '2021-05-21 08:29:41', NULL),
+(14, 3, '2021-05-21 08:29:41', NULL),
+(14, 5, '2021-05-21 08:29:41', NULL),
+(14, 9, '2021-05-21 08:29:41', NULL);
 
 -- --------------------------------------------------------
 
@@ -608,12 +771,34 @@ CREATE TABLE `divisions` (
 --
 
 INSERT INTO `divisions` (`id`, `name`, `content`, `image`, `slug`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(1, 'Networking', '<p>aswadawd</p>', 'images/division/DdatG1slAjSoam0Q9Gkbm5JHb44CbsiVnmcSoxBN.png', 'networking', NULL, '2021-04-08 20:37:45', '2021-04-08 20:37:45'),
-(2, 'Programming', '<p>programming</p>', 'images/division/FNArm6NbWqoAarNJ4iQgKQM8cgALLVsQBSs1kH5X.png', 'programming', NULL, '2021-04-09 22:55:34', '2021-04-09 22:55:34'),
+(1, 'Networking', 'Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang ilmu Jaringan. Buat teman-teman yang jurusan TKJ (Teknik Komputer Jaringan) wajib banget nih masuk Divisi Networking, karena akan sangat nyambung sekali nanti dengan materi TKJ, dalam Divisi Networking, kita akan mempelajari tentang materi-materi jaringan lebih luas lagi agar teman-teman semua lebih siap nanti di dunia kerja. Keuntungan bergabung di Divisi Networking ialah kita bisa membuat sebuah server internet yang dimana nanti akan di implementasikan di dunia kerja, so intinya nanti teman-teman akan diarahkan agar bisa menjadi seorang IT support atau Network Administrator yang handal', 'images/division/2j4FnW9SdxeB80JA9g0i1LWSYObXHXywyGJYHGqD.png', 'networking', NULL, '2021-04-08 20:37:45', '2021-05-20 07:18:49'),
+(2, 'Programming', '<p>Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang ilmu pemograman. Nah, programming itu sendiri berasal dari kata program. Program adalah sebuah urutan logika yang digunakan untuk menghasilkan keluaran tertentu yand disatukan menjadi sebuah sistem utuh yang disebut aplikasi. Dalam Divisi programming, kita akan berkutak pada script-script atau source code maupun bahasi pemograman. Keuntungan bergabung di Divisi Promgramming ialah kita bisa membuat suatu website sendiri, juga mengetahui bahasa pemograman agar bisa menjadi seorang programer yand handal./p>', 'images/division/7WUy28SXa3kv2PQTOPrj7MmgH2doMMnNyVCAHlLU.png', 'programming', NULL, '2021-04-09 22:55:34', '2021-05-20 07:19:53'),
 (3, 'Programming', '<p>programming</p>', 'images/division/Dmn7Tm6VcPnaNhP7EXGUyYNFDaDh8lEkC5LOLegt.png', 'programming', '2021-04-09 22:55:59', '2021-04-09 22:55:35', '2021-04-09 22:55:59'),
 (4, 'Programming', '<p>programming</p>', 'images/division/wTMqLJkcm1VbAcgNIX3NiwHNAnNXzLxRYrAH7Tz6.png', 'programming', '2021-04-09 22:55:57', '2021-04-09 22:55:35', '2021-04-09 22:55:57'),
 (5, 'Programming', '<p>programming</p>', 'images/division/sBmiBSUW3L6ysLqkNaDZu8xvSr1KmADuWMBSJ190.png', 'programming', '2021-04-09 22:55:55', '2021-04-09 22:55:35', '2021-04-09 22:55:55'),
-(6, 'Multimedia', '<p>programming</p>', 'images/division/OfX9QiGnJzHBUcN0nAfkJKKaqIZEiy4UpvTo60Iz.png', 'multimedia', NULL, '2021-04-09 22:56:20', '2021-04-09 22:56:20');
+(6, 'Multimedia', '<p>programming</p>', 'images/division/AGBjIEo8EL2124zVsSryIkV1Irl1X1N49VJUqb5y.png', 'multimedia', '2021-05-20 07:20:11', '2021-04-09 22:56:20', '2021-05-20 07:20:11'),
+(7, 'Multimedia', '<p>Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang desain, perfilman dan masih banyak lagi. Divisi Multimedia adalah suatu sarana (media) yand didalamnya terdapat perpaduan materi seperti Design Graphics, Design 3D, Design Characther, UI/UX, Editing video, dan Games 2D. keuntungan bergabung di Divisi Multimedia ialah kita bisa menjadi seorang desainer, editor, lalu kiga juga bisa terjun di dunia perfilman. Dan satu hal lagi, dalam mempelajari multimedia kita bisa membuka lapangan kerja sendiri. So buat teman-teman yang tertarik di bidang Desain, Editing Video dan Pembuatan Game langsung sajah join ke Divisi Multimedia yah.</p>', 'images/division/ANSDoaPC9ww4OJid9sqNcJNDZbKDuu7RDQgNvUKq.png', 'multimedia', NULL, '2021-05-20 07:21:21', '2021-05-20 07:21:21');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `division_mentor`
+--
+
+CREATE TABLE `division_mentor` (
+  `division_id` int NOT NULL,
+  `mentor_id` int NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `division_mentor`
+--
+
+INSERT INTO `division_mentor` (`division_id`, `mentor_id`, `created_at`, `updated_at`) VALUES
+(2, 2, '2021-05-25 14:27:14', NULL),
+(7, 2, '2021-05-25 14:27:14', NULL);
 
 -- --------------------------------------------------------
 
@@ -670,13 +855,21 @@ CREATE TABLE `failed_jobs` (
 CREATE TABLE `galleries` (
   `id` bigint UNSIGNED NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `galleries`
+--
+
+INSERT INTO `galleries` (`id`, `name`, `image`, `slug`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Ujian Sertifikasi, 18 Juli 2018', 'images/gallery/9AZOot3CvlJnkzMVKGaXLpg4sJWrC5rDTiBVlZN2.jpg', 'ujian-sertifikasi-18-juli-2018', '2021-05-20 07:41:38', '2021-05-20 07:41:38', NULL),
+(3, 'Pembekalan Dunia Kerja, 8 Mei 2019', 'images/gallery/GetHHPnGBxivlGEE7fK6e0ExiWNCPyJ1rASFGWkq.png', 'pembekalan-dunia-kerja-8-mei-2019', '2021-05-20 07:45:59', '2021-05-20 07:45:59', NULL),
+(4, 'Sertijab 2019-2020, 19 Juni 2019', 'images/gallery/jgsekmPpCECpUeGQsx2BK2w7ZREK99ssH90jtnK9.png', 'sertijab-2019-2020-19-juni-2019', '2021-05-20 07:46:33', '2021-05-20 07:46:33', NULL);
 
 -- --------------------------------------------------------
 
@@ -698,7 +891,23 @@ CREATE TABLE `image_division` (
 --
 
 INSERT INTO `image_division` (`id`, `division_id`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 2, 'images/ImageDivision/4kMzp13XywdEcY1kHYkXgLYmupds5ByAzZD89x2e.png', '2021-05-10 04:59:13', '2021-05-10 04:59:13', NULL);
+(1, 2, 'images/ImageDivision/4kMzp13XywdEcY1kHYkXgLYmupds5ByAzZD89x2e.png', '2021-05-10 04:59:13', '2021-05-20 07:21:49', '2021-05-20 07:21:49'),
+(2, 1, 'images/ImageDivision/u00gWWVO791SNzd2UebU6pDpOYfgDrGXfqJuogqR.png', '2021-05-20 06:46:33', '2021-05-20 06:46:33', NULL),
+(3, 1, 'images/ImageDivision/Qg05Dvg6BDjfs0Ld4SNmroJZwTKwVCvmnfs8TeRb.png', '2021-05-20 06:47:13', '2021-05-20 07:26:30', '2021-05-20 07:26:30'),
+(4, 1, 'images/ImageDivision/KRgUcgVFOICkwU7JG8shvk7XiYRa0f2LmFpF3LM7.png', '2021-05-20 06:48:05', '2021-05-20 06:48:05', NULL),
+(5, 2, 'images/ImageDivision/JZdBNm3giPpbRcbMvC0k6ayBA5lQIbGyCEkUOMcH.png', '2021-05-20 07:22:27', '2021-05-20 07:22:27', NULL),
+(6, 2, 'images/ImageDivision/gwNFBhSLpKxX5SpFkJFM04nbuzuNhWN4ELRx1Gl9.png', '2021-05-20 07:22:42', '2021-05-20 07:22:42', NULL),
+(7, 2, 'images/ImageDivision/h2OheOpBtR4HCXxBCMfKgFKDTroNbvE3MVn6ngi8.png', '2021-05-20 07:23:15', '2021-05-20 07:23:15', NULL),
+(8, 2, 'images/ImageDivision/LQXHW0EV4feBLRr7ZU5FZfGKfNUnIkparz44cHxM.png', '2021-05-20 07:23:26', '2021-05-20 07:23:26', NULL),
+(9, 2, 'images/ImageDivision/PguA4oeKilNNeA1BiGq7xVKgMHVTtL5BYkaSqTmT.png', '2021-05-20 07:24:12', '2021-05-20 07:24:12', NULL),
+(10, 2, 'images/ImageDivision/g29zFtCp0uxgSN5aRLNkrLhTGWwL9Z0zdm5LTRN4.png', '2021-05-20 07:24:31', '2021-05-20 07:24:31', NULL),
+(11, 2, 'images/ImageDivision/59FHfuYy3OpsXNJTX4zV8jkNEHFfnx5h5iEgp0Bo.png', '2021-05-20 07:25:33', '2021-05-20 07:25:33', NULL),
+(12, 1, 'images/ImageDivision/xmBUpHufk4sgV0krOWRUqjfPAflGXDOjsQcxeoRk.png', '2021-05-20 07:27:09', '2021-05-20 07:27:09', NULL),
+(13, 7, 'images/ImageDivision/oRwNV1AeY3I1EKJXLjNGIWSaeOBrUupxBlK2UyyO.png', '2021-05-20 07:27:41', '2021-05-20 07:27:41', NULL),
+(14, 7, 'images/ImageDivision/mEl1mmMeRHHG0PO6AbRWIQYHQo5V0KC8LiS3t30o.png', '2021-05-20 07:27:51', '2021-05-20 07:27:51', NULL),
+(15, 7, 'images/ImageDivision/FFyITBVDOgyhlDlUAULrIo44ZFGi4oRgo20DJ9jw.png', '2021-05-20 07:28:15', '2021-05-20 07:28:15', NULL),
+(16, 7, 'images/ImageDivision/anVWks4It1XvEdNTT2BM8ehFcssKsYOQS5GvGf7U.png', '2021-05-20 07:28:22', '2021-05-20 07:28:22', NULL),
+(17, 7, 'images/ImageDivision/6KBHdvj6L09Diogz0RoqRBqNeMnIGc9R4Fxii1sD.png', '2021-05-20 07:28:44', '2021-05-20 07:28:44', NULL);
 
 -- --------------------------------------------------------
 
@@ -714,6 +923,22 @@ CREATE TABLE `image_gallery` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `image_gallery`
+--
+
+INSERT INTO `image_gallery` (`id`, `gallery_id`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'images/ImageGalleries/CiDcY9gSyxzdNTsDkXOdTDfSpJwor1ObTeXiWsZH.jpg', '2021-05-21 11:20:16', '2021-05-21 11:20:16', NULL),
+(2, 1, 'images/ImageGalleries/1pLXx1IkuieVXx5G2FztSPXZN5C90RAr7RVNpaw4.jpg', '2021-05-21 11:20:43', '2021-05-21 11:20:43', NULL),
+(3, 1, 'images/ImageGalleries/6nY40BlCdlX7yaiIpAgkDBcNzw68LHoUBaBg0tRI.jpg', '2021-05-21 11:20:52', '2021-05-21 11:20:52', NULL),
+(4, 1, 'images/ImageGalleries/Yl7t6yf2iAZrDX6a0uJQLhtRwy1YnwShLXXUDWts.jpg', '2021-05-21 11:21:07', '2021-05-21 11:21:07', NULL),
+(5, 1, 'images/ImageGalleries/gyNOe4VjWGxM66t3faPOjOzp61YKz9cYfNrZ3zSG.jpg', '2021-05-21 11:21:40', '2021-05-21 11:21:40', NULL),
+(6, 1, 'images/ImageGalleries/498zyJ3rnbwpCoTBQIKWOijIRSEJlN0ihrU7kT3W.jpg', '2021-05-21 11:21:42', '2021-05-21 11:21:49', '2021-05-21 11:21:49'),
+(7, 1, 'images/ImageGalleries/cHVwM1TuTKyJDBhtJNmbBgwqgV9WKXFLS71fDVHe.jpg', '2021-05-21 11:22:01', '2021-05-21 11:22:01', NULL),
+(8, 1, 'images/ImageGalleries/q9BjiCLiBzH1sAAsVvpOd5jcb3krhIe8kg5baBVp.jpg', '2021-05-21 11:22:10', '2021-05-21 11:22:10', NULL),
+(9, 1, 'images/ImageGalleries/Vc8tX3eNBpHpr9Rr4grA4CQYGh7Yma9h6M2RmKDw.jpg', '2021-05-21 11:22:20', '2021-05-21 11:22:20', NULL),
+(10, 1, 'images/ImageGalleries/E7NsdURaZIjK8EHjb5z46IwyH6wWXgfGXw4ayNG4.jpg', '2021-05-21 11:22:33', '2021-05-21 11:22:33', NULL);
 
 -- --------------------------------------------------------
 
@@ -836,6 +1061,36 @@ INSERT INTO `member_reg` (`id`, `user_id`, `division_id`, `email`, `name`, `clas
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `mentors`
+--
+
+CREATE TABLE `mentors` (
+  `id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `whatsapp` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `sertifikasi` varchar(255) DEFAULT NULL,
+  `birth_date` date DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  `instagram` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `profession` varchar(255) NOT NULL,
+  `slug` varchar(255) NOT NULL,
+  `created_by` int NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `mentors`
+--
+
+INSERT INTO `mentors` (`id`, `name`, `image`, `whatsapp`, `sertifikasi`, `birth_date`, `gender`, `instagram`, `profession`, `slug`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(2, 'Teguh', 'images/mentor/ZnJaxh5pTlWTkbiGPb2bIOrdIZC6lADIJrPDmyd8.png', NULL, 'hmmm', NULL, 'laki-Laki', 'hmm', 'Test', 'teguh', 1, '2021-05-25 14:27:14', '2021-05-25 15:15:10', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `menu`
 --
 
@@ -860,24 +1115,25 @@ CREATE TABLE `menu` (
 
 INSERT INTO `menu` (`id`, `section_id`, `name`, `url`, `icon`, `type`, `comments`, `status`, `created_by`, `deleted_at`, `created_at`, `updated_at`) VALUES
 (1, 2, 'Dashboard', NULL, 'fas fa-fire', 'dynamic', 'Menu untuk menampung rincian website', '1', 1, NULL, '2021-03-18 04:31:28', '2021-03-18 18:40:09'),
-(2, 3, 'Preferences Web ', '', 'fas fa-columns', 'dynamic', 'Menu yang menyimpan preferences web', '1', 1, NULL, '2021-03-18 04:16:01', '2021-03-18 04:29:59'),
+(2, 3, 'Data Menu', NULL, 'fas fa-columns', 'dynamic', 'Menu yang menyimpan preferences web', '1', 1, NULL, '2021-03-18 04:16:01', '2021-05-20 06:10:26'),
 (3, 3, 'Data User', '/master/user', 'fas fa-user', 'static', 'Data untuk menampung user', '1', 1, NULL, '2021-03-17 22:05:48', '2021-03-19 05:05:26'),
 (4, 3, 'Data User', NULL, 'fas fa-user', 'dynamic', 'Data untuk menampung user', '1', 1, '2021-04-05 21:35:48', '2021-03-17 22:41:46', '2021-04-05 21:35:48'),
 (5, 6, 'Menu Baru', '/menu/baru', 'fas fa-clipboard-list', 'dynamic', 'contoh menu dynamic oke!', '1', 1, NULL, '2021-03-18 06:56:26', '2021-04-04 19:29:24'),
-(6, 3, 'Data Role', '/master/role', 'fas fa-user-cog', 'static', 'menu untuk menyimpan role', '1', 1, NULL, '2021-03-19 07:13:46', '2021-03-19 07:13:46'),
+(6, 3, 'Akun Level', '/master/role', 'fas fa-user-cog', 'static', 'menu untuk menyimpan role', '1', 1, NULL, '2021-03-19 07:13:46', '2021-05-20 06:00:36'),
 (7, 6, 'Menu Access', NULL, 'fas fa-server', 'dynamic', 'Menu yang berisi pengaturan untuk mengatur akses menu pada user', '1', 1, NULL, '2021-03-20 03:06:48', '2021-03-20 03:06:48'),
-(8, 7, 'Article', NULL, 'fas fa-newspaper', 'dynamic', 'untuk menyimpan data artikel itclub', '1', 1, NULL, '2021-03-23 07:32:17', '2021-03-23 07:32:17'),
+(8, 7, 'Berita', NULL, 'fas fa-newspaper', 'dynamic', 'untuk menyimpan data artikel itclub', '1', 1, NULL, '2021-03-23 07:32:17', '2021-05-20 06:00:55'),
 (9, 6, 'Error', NULL, 'fas fa-minus-circle', 'dynamic', 'menampung data error page', '1', 1, NULL, '2021-03-26 06:08:57', '2021-04-05 21:35:57'),
-(10, 3, 'Members', NULL, 'fas fa-users', 'dynamic', 'Menu untuk menampung members', '1', 1, NULL, '2021-03-28 13:53:30', '2021-03-28 13:55:17'),
+(10, 3, 'Profiles', NULL, 'fas fa-users', 'dynamic', 'Menu untuk menampung data mentor, alumni, member', '1', 1, NULL, '2021-03-28 13:53:30', '2021-05-25 07:44:56'),
 (11, 3, 'Category', '/master/category', 'fas fa-clipboard-list', 'static', 'Menu untuk menampung category', '1', 1, NULL, '2021-03-28 13:55:07', '2021-03-28 14:27:15'),
-(12, 3, 'Prestations', '/master/prestation', 'fas fa-certificate', 'static', NULL, '1', 1, NULL, '2021-03-28 14:09:07', '2021-03-28 14:10:19'),
-(13, 3, 'Divisions', NULL, 'fas fa-image', 'dynamic', NULL, '1', 1, NULL, '2021-04-04 09:16:48', '2021-04-04 09:16:48'),
-(16, 6, 'Trash', NULL, 'fas fa-trash', 'dynamic', 'Menu untuk menampung data data sampah', '1', 1, NULL, '2021-04-04 16:24:19', '2021-04-04 16:24:19'),
+(12, 3, 'Prestasi', '/master/prestation', 'fas fa-certificate', 'static', NULL, '1', 1, NULL, '2021-03-28 14:09:07', '2021-05-20 06:02:39'),
+(13, 3, 'Divisi', NULL, 'fas fa-image', 'dynamic', NULL, '1', 1, NULL, '2021-04-04 09:16:48', '2021-05-20 06:02:53'),
+(16, 6, 'Data Terbuang', NULL, 'fas fa-trash', 'dynamic', 'Menu untuk menampung data data sampah', '1', 1, NULL, '2021-04-04 16:24:19', '2021-05-20 06:03:25'),
 (17, 14, 'Registration', '/members/registration', 'fas fa fa-fw fa-id-badge', 'static', 'menyimpan data registrasi member', '1', 1, NULL, '2021-04-10 20:43:35', '2021-04-10 20:52:26'),
-(18, 14, 'Schedule', '/members/schedule', 'fas fa-calendar-alt', 'static', 'Menu untuk mengatur dan mencatat jadwal', '1', 1, NULL, '2021-04-11 15:57:17', '2021-04-11 15:57:17'),
-(19, 14, 'Precentages', NULL, 'fas fa-fw fa-desktop', 'dynamic', 'Menu untuk menampung presentase anggota/member', '1', 1, NULL, '2021-04-14 20:40:09', '2021-04-14 20:40:09'),
-(20, 7, 'User Guides', '/features/user_guides', 'fas fa-book-open', 'static', 'Menampung tatacara penggunaan website', '1', 1, NULL, '2021-04-20 08:27:49', '2021-04-20 13:50:44'),
-(21, 3, 'Galleries', NULL, 'fas fa-images', 'dynamic', 'Menu untuk menampung data galleries', '1', 1, NULL, '2021-05-10 04:45:50', '2021-05-10 04:45:50');
+(18, 14, 'Jadwal', '/members/schedule', 'fas fa-calendar-alt', 'static', 'Menu untuk mengatur dan mencatat jadwal', '1', 1, NULL, '2021-04-11 15:57:17', '2021-05-20 06:06:19'),
+(19, 14, 'Persentase', NULL, 'fas fa-fw fa-desktop', 'dynamic', 'Menu untuk menampung presentase anggota/member', '1', 1, NULL, '2021-04-14 20:40:09', '2021-05-20 06:07:59'),
+(20, 7, 'Petunjuk', '/features/user_guides', 'fas fa-book-open', 'static', 'Menampung tatacara penggunaan website', '1', 1, NULL, '2021-04-20 08:27:49', '2021-05-20 06:08:31'),
+(21, 3, 'Galeri', NULL, 'fas fa-images', 'dynamic', 'Menu untuk menampung data galleries', '1', 1, NULL, '2021-05-10 04:45:50', '2021-05-20 07:32:14'),
+(22, 3, 'Mentors', NULL, 'fas fa-chalkboard-teacher', 'dynamic', NULL, '1', 1, '2021-05-25 07:45:29', '2021-05-25 07:24:23', '2021-05-25 07:45:29');
 
 -- --------------------------------------------------------
 
@@ -964,7 +1220,11 @@ CREATE TABLE `prestations` (
 --
 
 INSERT INTO `prestations` (`id`, `name`, `content`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'peraih medai emas', '<p>dawdawdwadwa</p>', 'images/prestation/9PNWJVX4o6BjhyjtHUzUi2YulksAHVfAg6CVJwom.jpg', '2021-03-28 14:19:49', '2021-03-28 14:25:44', '2021-03-28 14:25:44');
+(1, 'peraih medai emas', '<p>dawdawdwadwa</p>', 'images/prestation/9PNWJVX4o6BjhyjtHUzUi2YulksAHVfAg6CVJwom.jpg', '2021-03-28 14:19:49', '2021-03-28 14:25:44', '2021-03-28 14:25:44'),
+(2, 'Juara 1 Nasional Mikrotik', '<p>Hello guys disini ada Fajri dan Riezkan dari divisi networking yang mampu memberikan prestasi yg luar biasa.</p>', 'images/prestation/qsvwkrH4ewBCbqBWIcCLTzvJKu9CBoVouCeSA8Ha.png', '2021-05-20 07:14:37', '2021-05-20 07:14:37', NULL),
+(3, 'Juara 1 Nasional Mikrotik', '<p>Hello guys disini ada Fajri dan Riezkan dari divisi networking yang mampu memberikan prestasi yg luar biasa.</p>', 'images/prestation/f4QzpcPIokC7ZHIRNYeidZx3HEkw690zDiEBBT3x.png', '2021-05-20 07:15:07', '2021-05-20 07:15:07', NULL),
+(4, 'Juara 1 Nasional Mikrotik', '<p>Hello guys disini ada Fajri dan Riezkan dari divisi networking yang mampu memberikan prestasi yg luar biasa.</p>', 'images/prestation/f1EFTVrE9Mt7SuPrmgnkdggnNn0QWot1hWaKp3Wp.png', '2021-05-20 07:15:43', '2021-05-20 07:15:43', NULL),
+(5, 'Juara 1 Nasional Mikrotik', '<p>Hello guys disini ada Fajri dan Riezkan dari divisi networking yang mampu memberikan prestasi yg luar biasa.</p>', 'images/prestation/zzD9N0sJbPGkCHdmyERZEiHYzE9k7uQTWna5foEh.jpg', '2021-05-20 07:16:10', '2021-05-20 07:16:27', '2021-05-20 07:16:27');
 
 -- --------------------------------------------------------
 
@@ -1082,7 +1342,6 @@ INSERT INTO `set_access_menu` (`id`, `role_id`, `menu_id`, `created_by`, `create
 (6, 1, 8, 1, '2021-04-04 16:41:55', NULL),
 (7, 6, 8, 1, '2021-04-08 01:39:48', NULL),
 (8, 6, 1, 1, '2021-04-08 01:40:07', NULL),
-(11, 4, 8, 1, '2021-04-11 03:47:02', NULL),
 (12, 4, 1, 1, '2021-04-11 03:47:04', NULL);
 
 -- --------------------------------------------------------
@@ -1113,7 +1372,6 @@ INSERT INTO `set_access_section` (`id`, `role_id`, `section_id`, `created_by`, `
 (13, 6, 7, 1, '2021-04-08 01:39:36', NULL),
 (14, 6, 2, 1, '2021-04-08 01:39:58', NULL),
 (15, 1, 14, 1, '2021-04-11 03:44:05', NULL),
-(18, 4, 7, 1, '2021-04-11 03:46:56', NULL),
 (19, 4, 2, 1, '2021-04-11 03:46:58', NULL);
 
 -- --------------------------------------------------------
@@ -1174,37 +1432,39 @@ INSERT INTO `submenu` (`id`, `menu_id`, `name`, `url`, `comments`, `status`, `cr
 (1, 2, 'section', '/master/preferences/section', 'Menampung data section web', '1', 1, NULL, '2021-03-18 04:03:36', '2021-03-20 03:14:34'),
 (2, 2, 'menu', '/master/preferences/menu', 'Menampun data menu web', '1', 1, NULL, '2021-03-18 04:14:15', '2021-03-18 18:35:46'),
 (3, 2, 'submenu', '/master/preferences/submenu', 'Menampun data submenu web', '1', 1, NULL, '2021-03-18 04:14:27', '2021-03-18 18:35:43'),
-(4, 1, 'general dashboard', '/dashboard/general/index', 'Menampung data index web', '1', 1, NULL, '2021-03-18 04:21:43', '2021-03-18 18:35:34'),
+(4, 1, 'Dashboard Utama', '/dashboard/general/index', 'Menampung data index web', '1', 1, NULL, '2021-03-18 04:21:43', '2021-05-20 06:12:26'),
 (5, 5, 'submenu baru', '/section/menu/submenu', 'ini adalah submenu baru', '1', 1, '2021-03-18 07:01:05', '2021-03-18 07:00:48', '2021-03-18 07:01:05'),
-(6, 7, 'Roles', '/setting/menu/role', 'Berfungsi untuk mengatur menu pada role', '1', 1, NULL, '2021-03-20 03:10:32', '2021-03-20 03:11:30'),
-(7, 7, 'Users', '/setting/menu/user', 'Berfungsi untuk mengatur menu pada user', '1', 1, NULL, '2021-03-20 03:11:23', '2021-03-23 06:52:54'),
-(8, 8, 'List Article', '/features/article/list_article', 'daftar artikel-artikel', '1', 1, NULL, '2021-03-23 07:33:08', '2021-03-26 07:00:07'),
+(6, 7, 'Level Pengguna', '/setting/menu/role', 'Berfungsi untuk mengatur menu pada role', '1', 1, NULL, '2021-03-20 03:10:32', '2021-05-20 06:34:13'),
+(7, 7, 'Pengguna', '/setting/menu/user', 'Berfungsi untuk mengatur menu pada user', '1', 1, NULL, '2021-03-20 03:11:23', '2021-05-20 06:34:31'),
+(8, 8, 'Berita', '/features/article/list_article', 'daftar artikel-artikel', '1', 1, NULL, '2021-03-23 07:33:08', '2021-05-20 06:18:46'),
 (9, 9, 'Page', '/setting/error/page', 'Mengubah, menambah dan menghapus error page', '1', 1, NULL, '2021-03-26 06:57:57', '2021-03-26 06:57:57'),
-(10, 10, 'Member', '/master/members/member', 'Daftar Member-member IT Club', '1', 1, NULL, '2021-03-28 13:57:06', '2021-03-28 13:57:22'),
-(11, 10, 'Graduates', '/master/members/alumni', 'Daftar Alumni IT Club', '1', 1, NULL, '2021-03-28 13:58:00', '2021-04-14 01:16:02'),
-(12, 13, 'List Divisions', '/master/divisions/division', NULL, '1', 1, NULL, '2021-04-04 09:18:24', '2021-04-04 09:20:33'),
-(13, 13, 'Image Divisions', '/master/divisions/imagedivision', NULL, '1', 1, NULL, '2021-04-04 09:18:38', '2021-04-04 09:20:40'),
+(10, 10, 'Anggota', '/master/profiles/member', 'Daftar Member-member IT Club', '1', 1, NULL, '2021-03-28 13:57:06', '2021-05-25 07:43:21'),
+(11, 10, 'Alumni', '/master/profiles/alumni', 'Daftar Alumni IT Club', '1', 1, NULL, '2021-03-28 13:58:00', '2021-05-25 07:42:53'),
+(12, 13, 'Divisi', '/master/divisions/division', NULL, '1', 1, NULL, '2021-04-04 09:18:24', '2021-05-20 06:19:45'),
+(13, 13, 'Icon Divisi', '/master/divisions/imagedivision', NULL, '1', 1, NULL, '2021-04-04 09:18:38', '2021-05-20 06:48:56'),
 (15, 16, 'Section', '/setting/trash/section', 'Data sampah section', '1', 1, NULL, '2021-04-04 16:27:50', '2021-04-04 16:27:50'),
 (16, 16, 'Menu', '/setting/trash/menu', 'Data sampah menu', '1', 1, NULL, '2021-04-04 16:28:02', '2021-04-04 16:28:02'),
 (17, 16, 'Submenu', '/setting/trash/submenu', 'Data sampah submenu', '1', 1, NULL, '2021-04-04 16:28:14', '2021-04-04 16:28:14'),
 (18, 1, 'User Dashboard', '/dashboard/user/index', 'Menampung data dan informasi user', '1', 1, NULL, '2021-04-05 22:02:15', '2021-04-05 22:02:15'),
-(19, 19, 'List Test', '/members/precentages/test', 'Submenu untuk menampung test test member', '1', 1, NULL, '2021-04-14 20:41:07', '2021-04-14 20:41:07'),
-(20, 19, 'List Score', '/members/precentages/score', 'Submenu untuk menampung nilai dari test test member', '1', 1, NULL, '2021-04-14 20:41:42', '2021-04-14 20:41:42'),
-(21, 21, 'Gallery', '/master/galleries/gallery', 'Submenu untuk menampung data gallery', '1', 1, NULL, '2021-05-10 04:46:55', '2021-05-10 04:46:55'),
-(22, 21, 'Images Gallery', '/master/galleries/imagegallery', 'Submenu untuk menampung data images gallery', '1', 1, NULL, '2021-05-10 04:47:17', '2021-05-10 04:47:17'),
-(23, 16, 'User', '/setting/trash/user', 'Submenu untuk menampung sampah data user', '1', 1, NULL, '2021-05-10 04:50:10', '2021-05-10 04:50:10'),
-(24, 16, 'Division', '/setting/trash/division', 'Submenu untuk menampung sampah data division', '1', 1, NULL, '2021-05-10 04:50:27', '2021-05-10 04:50:27'),
-(25, 16, 'Image Division', '/setting/trash/imagedivision', 'Submenu untuk menampung sampah data image division', '1', 1, NULL, '2021-05-10 04:50:45', '2021-05-10 04:50:45'),
-(26, 16, 'Prestation', '/setting/trash/prestation', 'Submenu untuk menampung sampah data prestation', '1', 1, NULL, '2021-05-10 04:51:04', '2021-05-10 04:51:04'),
-(27, 16, 'Member', '/setting/trash/member', 'Submenu untuk menampung sampah data member', '1', 1, NULL, '2021-05-10 04:51:21', '2021-05-10 04:51:21'),
+(19, 19, 'Daftar Ujian', '/members/precentages/test', 'Submenu untuk menampung test test member', '1', 1, NULL, '2021-04-14 20:41:07', '2021-05-20 06:37:17'),
+(20, 19, 'Daftar Nilai', '/members/precentages/score', 'Submenu untuk menampung nilai dari test test member', '1', 1, NULL, '2021-04-14 20:41:42', '2021-05-20 06:30:27'),
+(21, 21, 'Galeri', '/master/galleries/gallery', 'Submenu untuk menampung data gallery', '1', 1, NULL, '2021-05-10 04:46:55', '2021-05-20 06:30:37'),
+(22, 21, 'Foto Galeri', '/master/galleries/imagegallery', 'Submenu untuk menampung data images gallery', '1', 1, NULL, '2021-05-10 04:47:17', '2021-05-20 06:30:51'),
+(23, 16, 'Pengguna', '/setting/trash/user', 'Submenu untuk menampung sampah data user', '1', 1, NULL, '2021-05-10 04:50:10', '2021-05-20 06:33:33'),
+(24, 16, 'Divisi', '/setting/trash/division', 'Submenu untuk menampung sampah data division', '1', 1, NULL, '2021-05-10 04:50:27', '2021-05-20 08:31:01'),
+(25, 16, 'Icon Divisi', '/setting/trash/imagedivision', 'Submenu untuk menampung sampah data image division', '1', 1, NULL, '2021-05-10 04:50:45', '2021-05-20 08:31:21'),
+(26, 16, 'Prestasi', '/setting/trash/prestation', 'Submenu untuk menampung sampah data prestation', '1', 1, NULL, '2021-05-10 04:51:04', '2021-05-20 08:31:30'),
+(27, 16, 'Anggota', '/setting/trash/member', 'Submenu untuk menampung sampah data member', '1', 1, NULL, '2021-05-10 04:51:21', '2021-05-20 08:31:36'),
 (28, 16, 'Alumni', '/setting/trash/alumni', 'Submenu untuk menampung sampah data alumni', '1', 1, NULL, '2021-05-10 04:51:38', '2021-05-10 04:51:38'),
-(29, 16, 'Gallery', '/setting/trash/gallery', 'Submenu untuk menampung sampah data gallery', '1', 1, NULL, '2021-05-10 04:51:52', '2021-05-10 04:51:52'),
-(30, 16, 'Image Gallery', '/setting/trash/imagegallery', 'Submenu untuk menampung sampah data image gallery', '1', 1, NULL, '2021-05-10 04:52:01', '2021-05-10 12:31:15'),
+(29, 16, 'Galeri', '/setting/trash/gallery', 'Submenu untuk menampung sampah data gallery', '1', 1, NULL, '2021-05-10 04:51:52', '2021-05-20 08:30:45'),
+(30, 16, 'Foto Galeri', '/setting/trash/imagegallery', 'Submenu untuk menampung sampah data image gallery', '1', 1, NULL, '2021-05-10 04:52:01', '2021-05-20 08:33:32'),
 (31, 16, 'Category', '/setting/trash/categoty', 'Submenu untuk menampung sampah data category', '1', 1, NULL, '2021-05-10 04:52:18', '2021-05-10 04:52:18'),
-(32, 16, 'Activity', '/setting/trash/activity', 'Submenu untuk menampung sampah data activity', '1', 1, NULL, '2021-05-10 04:52:37', '2021-05-10 04:52:37'),
-(33, 16, 'Schedule', '/setting/trash/schedule', 'Submenu untuk menampung sampah data schedule', '1', 1, NULL, '2021-05-10 04:52:57', '2021-05-10 04:52:57'),
-(34, 16, 'Test Exam', '/setting/trash/test', 'Submenu untuk menampung sampah data exam', '1', 1, NULL, '2021-05-10 04:53:36', '2021-05-10 04:53:36'),
-(35, 16, 'Exam Score', '/setting/trash/score', 'Submenu untuk menampung sampah data exam score', '1', 1, NULL, '2021-05-10 04:53:56', '2021-05-10 04:53:56');
+(32, 16, 'Aktifitas', '/setting/trash/activity', 'Submenu untuk menampung sampah data activity', '1', 1, NULL, '2021-05-10 04:52:37', '2021-05-20 08:31:48'),
+(33, 16, 'Jadwal', '/setting/trash/schedule', 'Submenu untuk menampung sampah data schedule', '1', 1, NULL, '2021-05-10 04:52:57', '2021-05-20 08:31:53'),
+(34, 16, 'Ujian', '/setting/trash/test', 'Submenu untuk menampung sampah data exam', '1', 1, NULL, '2021-05-10 04:53:36', '2021-05-20 08:32:00'),
+(35, 16, 'Nilai', '/setting/trash/score', 'Submenu untuk menampung sampah data exam score', '1', 1, NULL, '2021-05-10 04:53:56', '2021-05-20 08:32:05'),
+(36, 10, 'Mentor', '/master/profiles/mentor', 'Submenu untuk menampung data mentor', '1', 1, NULL, '2021-05-25 05:08:46', '2021-05-25 07:43:46'),
+(37, 16, 'Mentor', '/setting/trash/mentor', 'Submenu untuk menampung sampah data mentor', '1', 1, NULL, '2021-05-25 06:06:18', '2021-05-25 06:06:18');
 
 -- --------------------------------------------------------
 
@@ -1426,6 +1686,12 @@ ALTER TABLE `divisions`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `division_mentor`
+--
+ALTER TABLE `division_mentor`
+  ADD PRIMARY KEY (`division_id`,`mentor_id`);
+
+--
 -- Indeks untuk tabel `exception_error`
 --
 ALTER TABLE `exception_error`
@@ -1478,6 +1744,12 @@ ALTER TABLE `members`
 -- Indeks untuk tabel `member_reg`
 --
 ALTER TABLE `member_reg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `mentors`
+--
+ALTER TABLE `mentors`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1585,7 +1857,7 @@ ALTER TABLE `user_guides_decs`
 -- AUTO_INCREMENT untuk tabel `access_user_menu`
 --
 ALTER TABLE `access_user_menu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
 -- AUTO_INCREMENT untuk tabel `access_user_section`
@@ -1597,13 +1869,13 @@ ALTER TABLE `access_user_section`
 -- AUTO_INCREMENT untuk tabel `access_user_submenu`
 --
 ALTER TABLE `access_user_submenu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT untuk tabel `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=276;
 
 --
 -- AUTO_INCREMENT untuk tabel `alumnies`
@@ -1615,7 +1887,7 @@ ALTER TABLE `alumnies`
 -- AUTO_INCREMENT untuk tabel `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `blog_suspended`
@@ -1633,7 +1905,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT untuk tabel `divisions`
 --
 ALTER TABLE `divisions`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `exception_error`
@@ -1651,19 +1923,19 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT untuk tabel `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `image_division`
 --
 ALTER TABLE `image_division`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT untuk tabel `image_gallery`
 --
 ALTER TABLE `image_gallery`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `list_score`
@@ -1690,10 +1962,16 @@ ALTER TABLE `member_reg`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
+-- AUTO_INCREMENT untuk tabel `mentors`
+--
+ALTER TABLE `mentors`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT untuk tabel `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
@@ -1705,7 +1983,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `prestations`
 --
 ALTER TABLE `prestations`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `roles`
@@ -1735,7 +2013,7 @@ ALTER TABLE `set_access_menu`
 -- AUTO_INCREMENT untuk tabel `set_access_section`
 --
 ALTER TABLE `set_access_section`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT untuk tabel `set_access_submenu`
@@ -1747,7 +2025,7 @@ ALTER TABLE `set_access_submenu`
 -- AUTO_INCREMENT untuk tabel `submenu`
 --
 ALTER TABLE `submenu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`

@@ -82,19 +82,7 @@
                             What's image Gallery?
                       </div>    
                         </div>
-                     
-                    <div class="form-group row">
-                      <div class="form-group col-12">
-                        <label>Content Gallery</label>
-                        <textarea class="form-control use-ckeditor" name="content" placeholder="content Gallery">
-                          
-                        </textarea>
-                        
-                      </div>
-                       <div class="invalid-feedback">
-                            What's content Gallery?
-                          </div>
-                    </div>
+                 
                     </div>
                     <div class="modal-footer ml-3">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -142,18 +130,7 @@
                       </div>    
                         </div>
                      
-                    <div class="form-group row">
-                      <div class="form-group col-12">
-                        <label>Content Gallery</label>
-                        <textarea class="form-control use-ckeditor" name="content" placeholder="content Gallery">
-                          
-                        </textarea>
-                        
-                      </div>
-                       <div class="invalid-feedback">
-                            What's content Gallery?
-                          </div>
-                    </div>
+               
                     </div>
                     <div class="modal-footer ml-3">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

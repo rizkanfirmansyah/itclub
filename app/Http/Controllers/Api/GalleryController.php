@@ -75,7 +75,6 @@ class GalleryController extends Controller
         
         $gallery = Gallery::create([
             'name' => $request->name,
-            'content' => $request->content,
             'image' =>  $request->file('image')->store('images/gallery'),
             'slug' => $slug,
             'created_by' => auth()->user()->id
@@ -131,7 +130,6 @@ class GalleryController extends Controller
 
         $gallery->update([
             'name' => $request->name,
-            'content' => $request->content,
             'image' => $image,
             'slug' => $slug,
             'created_by' => auth()->user()->id
