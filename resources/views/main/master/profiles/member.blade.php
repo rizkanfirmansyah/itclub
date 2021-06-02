@@ -24,14 +24,14 @@
                                 </div>
                             </th>
                             <th>Name</th>
-                            <th>Email</th>
+            
                             <th>Division</th>
                             <th>Class</th>
                             <th>Position</th>
                             <th>Entry Year</th>
                             <th>Image</th>
                             <th>Created At</th>
-                            <th>Status</th>
+                         
                             <th width="70px">Action</th>
                             </tr>
                         </thead>
@@ -62,19 +62,20 @@
             <div class="modal-body">
                <form class="needs-validation" novalidate id="insert">
                 <div class="row">
-                      <div class="form-group col-md-6 col-12">
-                        <label>User ID</label>
-                        <select required name="user_id" class="form-control">
-                              <option selected disabled>== Email dari table User ==</option>
-                              @foreach ($users as $data)
-                                <option value="{{$data->id}}">{{$data->email}}</option>
-                              @endforeach
-                          </select>
+                      <div class="form-group col-md-12 col-12">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" required="" placeholder="Name Member"  >
                         <div class="invalid-feedback">
-                          Please fill in the ID User
+                          Please fill in the Name
                         </div>
                       </div>
-                      <div class="form-group col-md-6 col-12">
+
+
+                     
+                    </div>
+                    <div class="row">
+                    
+                       <div class="form-group col-md-6 col-12">
                         <label>Division</label>
                         <select required name="division_id" class="form-control">
                               <option selected disabled>== Pilih Divisi ==</option>
@@ -86,15 +87,8 @@
                           Please fill in the Division
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-md-6 col-12">
-                        <label>Name</label>
-                        <input type="text" class="form-control" name="name" required="" placeholder="Name Member"  >
-                        <div class="invalid-feedback">
-                          Please fill in the Name
-                        </div>
-                      </div>
+
+
                        <div class="form-group col-md-6 col-12">
                         <label>Jabatan</label>
                         <input type="text" class="form-control" name="position" required="" placeholder="Posisi Member"  >
@@ -178,20 +172,18 @@
             </div>
             <div class="modal-body">
                <form class="needs-validation" novalidate id="update">
-                <div class="row">
-                      <div class="form-group col-md-6 col-12">
-                        <label>User ID</label>
-                        <select required name="user_id" class="form-control">
-                              <option selected disabled>== ID dari table User ==</option>
-                              @foreach ($users as $data)
-                                <option value="{{$data->id}}">{{$data->email}}</option>
-                              @endforeach
-                          </select>
+               <div class="row">
+                      <div class="form-group col-md-12 col-12">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" required="" placeholder="Name Member"  >
                         <div class="invalid-feedback">
-                          Please fill in the ID User
+                          Please fill in the Name
                         </div>
                       </div>
-                      <div class="form-group col-md-6 col-12">
+                    </div>
+                    <div class="row">
+                    
+                       <div class="form-group col-md-6 col-12">
                         <label>Division</label>
                         <select required name="division_id" class="form-control">
                               <option selected disabled>== Pilih Divisi ==</option>
@@ -203,15 +195,8 @@
                           Please fill in the Division
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-md-6 col-12">
-                        <label>Name</label>
-                        <input type="text" class="form-control" name="name" required="" placeholder="Name Member"  >
-                        <div class="invalid-feedback">
-                          Please fill in the Name
-                        </div>
-                      </div>
+
+
                        <div class="form-group col-md-6 col-12">
                         <label>Jabatan</label>
                         <input type="text" class="form-control" name="position" required="" placeholder="Posisi Member"  >

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\{
-    Section,Submenu,Menu,Prestation,User,Division,ImageDivision,Alumni,Gallery,ImageGallery,Category,Member,Activity,Schedule,TestList,ScoreList,Mentor
+    Section,Submenu,Menu,Prestation,User,Division,ImageDivision,Alumni,Gallery,ImageGallery,Category,Member,Activity,Schedule,TestList,ScoreList,Mentor,MemberIT
     };
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
@@ -1011,9 +1011,9 @@ class TrashController extends Controller
                     <label for="checkbox-' . $mentor->id . '" class="custom-control-label">&nbsp;</label>
                     </div>';
             })
-            ->addColumn('btn', function ($mentor) {
+               ->addColumn('btn', function ($mentor) {
                 return '
-            <a href="#" class="btn btn-icon btn-sm btn-primary" data-value="' . $mentor->id . '" id="edit"><i class="fas fa-edit"></i></a>
+            <a href="#" class="btn btn-icon btn-sm btn-info" data-value="' . $mentor->id . '" id="recycle"><i class="fas fa-recycle"></i></a>
             <a href="#" class="btn btn-icon btn-sm btn-danger" data-value="' . $mentor->id . '" id="delete"><i class="fas fa-trash"></i></a>
             ';
             })
@@ -1066,6 +1066,69 @@ class TrashController extends Controller
       $mentor->forceDelete();
         return response()->json(['message' => 'Data berhasil di hapus', 'status' => 'success'], 200);
     }
+
+      public function memberIT_get()
+    {
+        $member = MemberIT::onlyTrashed();
+
+        return DataTables::of($member)
+            ->addIndexColumn()
+            ->addColumn('check', function ($member) {
+                return  '<div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad" class="custom-control-input" value="' . $member->id . '" name="id-checkbox" onchange="checkbox_this(this)" id="checkbox-' . $member->id . '" >
+                    <label for="checkbox-' . $member->id . '" class="custom-control-label">&nbsp;</label>
+                    </div>';
+            })
+            ->addColumn('btn', function ($member) {
+                return '
+            <a href="#" class="btn btn-icon btn-sm btn-info" data-value="' . $member->id . '" id="recycle"><i class="fas fa-recycle"></i></a>
+            <a href="#" class="btn btn-icon btn-sm btn-danger" data-value="' . $member->id . '" id="delete"><i class="fas fa-trash"></i></a>
+            ';
+            })
+            ->addColumn('imageMember', function ($member) {
+                return '<img src="' . $member->image() . '" width="50">';
+            })
+
+            ->editColumn('division_id', function ($member) {
+                return $member->division->name;
+            })
+            ->rawColumns(['check', 'btn', 'imageMember','division_id'])
+            ->make(true);
+    }
+
+    public function memberIT_recovery(Request $request)
+    {
+        activity('merecovery data sampah member');
+        if (is_array($request->value)) {
+            foreach ($request->value as $value) {
+                MemberIT::onlyTrashed()->where('id', $value)->restore();
+            }
+            return response()->json(['message' => 'Data berhasil di restore', 'status' => 'success'], 200);
+        }
+         MemberIT::onlyTrashed()->where('id', $request->value)->restore();
+        return response()->json(['message' => 'Data berhasil di restore', 'status' => 'success'], 200);
+    }
+
+    public function memberIT_delete(Request $request)
+    {
+        activity('menghapus data sampah member');
+        if (is_array($request->value)) {
+            foreach ($request->value as $value) {
+               $member = MemberIT::onlyTrashed()->where('id', $value)->first();
+                \Storage::delete($member->image);
+                // $member->alumni()->forceDelete();
+               $member->forceDelete();
+            }
+            return response()->json(['message' => 'Data berhasil di hapus', 'status' => 'success'], 200);
+        }
+      
+      $member = MemberIT::onlyTrashed()->where('id', $request->value)->first();
+      \Storage::delete($member->image);
+      // $member->alumni()->forceDelete();
+      $member->forceDelete();
+        return response()->json(['message' => 'Data berhasil di hapus', 'status' => 'success'], 200);
+    }
+
 
 
 }

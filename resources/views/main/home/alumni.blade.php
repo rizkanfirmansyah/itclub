@@ -19,8 +19,7 @@
                     </div>
                 </div>
             </div>
-        
-                  <div style="text-align: center;">
+          <div class="d-flex justify-content-center">
                           {{$alumnies->links()}}
                   </div>
           </section>

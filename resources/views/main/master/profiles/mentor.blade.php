@@ -73,10 +73,10 @@
 
                        <div class="form-group row">
                         <div class="form-group col-12">
-                        <label>Keahlian / Profesion</label>
-                          <input type="text" class="form-control" name="profession" placeholder="Keahlian / Profesion" required="">
+                        <label>Keahlian / Pekerjaan</label>
+                          <input type="text" class="form-control" name="profession" placeholder="Keahlian / Pekerjaan" required="">
                           <div class="invalid-feedback">
-                            Keahlian / Profesion?
+                            Keahlian / Pekerjaan?
                           </div>
                         </div>
                       </div>
@@ -135,18 +135,49 @@
                       </div>
                        <div class="form-group row">
                         <div class="form-group col-6">
-                        <label>Nomor Whatsapp</label>
+                        <label>Whatsapp</label>
                           <input type="number" class="form-control" name="whatsapp"  placeholder="Nomor Whatsapp"  >
                           
                         </div>
                      
                         <div class="form-group col-6">
-                        <label>Instagram Nickname</label>
-                          <input type="text" class="form-control" name="instagram"placeholder="Instagram Nickname">
+                        <label>Email</label>
+                          <input type="email" class="form-control" name="email"placeholder="Email">
+                        </div>
+                      </div>
+
+                       <div class="form-group row">
+                        <div class="form-group col-6">
+                        <label>Facebook</label>
+                          <input type="text" class="form-control" name="facebook"  placeholder="Facebook"  >
+                          
+                        </div>
+                     
+                        <div class="form-group col-6">
+                        <label>Instagram</label>
+                          <input type="text" class="form-control" name="instagram"placeholder="Instagram">
+                        </div>
+                      </div>
+
+                        <div class="form-group row">
+                        <div class="form-group col-6">
+                        <label>Youtube</label>
+                          <input type="text" class="form-control" name="youtube"  placeholder="Youtube"  >
+                          
+                        </div>
+                     
+                        <div class="form-group col-6">
+                        <label>Website</label>
+                          <input type="text" class="form-control" name="website"placeholder="Website">
+                        </div>
+                      </div>
+                         <div class="form-group row">
+                        <div class="form-group col-12">
+                        <label>Tentang Saya</label>
+                          <textarea class="form-control" name="content" placeholder="Tentang saya" style="height: 70px;"></textarea>
                           
                         </div>
                       </div>
-              
                     </div>
                     <div class="modal-footer ml-3">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -168,7 +199,7 @@
                 </button>
             </div>
             <div class="modal-body">
-               <form class="needs-validation" novalidate id="update">
+                <form class="needs-validation" novalidate id="update">
                      
                        <div class="form-group row">
                         <div class="form-group col-12">
@@ -182,10 +213,10 @@
 
                        <div class="form-group row">
                         <div class="form-group col-12">
-                        <label>Keahlian / Profesion</label>
-                          <input type="text" class="form-control" name="profession" placeholder="Keahlian / Profesion" required="">
+                        <label>Keahlian / Pekerjaan</label>
+                          <input type="text" class="form-control" name="profession" placeholder="Keahlian / Pekerjaan" required="">
                           <div class="invalid-feedback">
-                            Keahlian / Profesion?
+                            Keahlian / Pekerjaan?
                           </div>
                         </div>
                       </div>
@@ -244,18 +275,49 @@
                       </div>
                        <div class="form-group row">
                         <div class="form-group col-6">
-                        <label>Nomor Whatsapp</label>
+                        <label>Whatsapp</label>
                           <input type="number" class="form-control" name="whatsapp"  placeholder="Nomor Whatsapp"  >
                           
                         </div>
                      
                         <div class="form-group col-6">
-                        <label>Instagram Nickname</label>
-                          <input type="text" class="form-control" name="instagram"placeholder="Instagram Nickname">
+                        <label>Email</label>
+                          <input type="email" class="form-control" name="email"placeholder="Email">
+                        </div>
+                      </div>
+
+                       <div class="form-group row">
+                        <div class="form-group col-6">
+                        <label>Facebook</label>
+                          <input type="text" class="form-control" name="facebook"  placeholder="Facebook"  >
+                          
+                        </div>
+                     
+                        <div class="form-group col-6">
+                        <label>Instagram</label>
+                          <input type="text" class="form-control" name="instagram"placeholder="Instagram">
+                        </div>
+                      </div>
+
+                        <div class="form-group row">
+                        <div class="form-group col-6">
+                        <label>Youtube</label>
+                          <input type="text" class="form-control" name="youtube"  placeholder="Youtube"  >
+                          
+                        </div>
+                     
+                        <div class="form-group col-6">
+                        <label>Website</label>
+                          <input type="text" class="form-control" name="website"placeholder="Website">
+                        </div>
+                      </div>
+                         <div class="form-group row">
+                        <div class="form-group col-12">
+                        <label>Tentang Saya</label>
+                          <textarea class="form-control" name="content" placeholder="Tentang saya" style="height: 70px;"></textarea>
                           
                         </div>
                       </div>
-              
                     </div>
                     <div class="modal-footer ml-3">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

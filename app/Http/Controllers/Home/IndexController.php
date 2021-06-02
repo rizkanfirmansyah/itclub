@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\{Prestation, Division, ImageDivision, Article, Member, Alumni, Gallery, ImageGallery};
+use App\Models\{Prestation, Division, ImageDivision, Article, MemberIT, Alumni, Gallery, ImageGallery, Mentor};
 
 
 class IndexController extends Controller
@@ -47,7 +47,7 @@ class IndexController extends Controller
     public function member($class)
     {
 
-        $members = Member::where('class', $class)->get();
+        $members = MemberIT::where('class', $class)->get();
         return view('main/home/member', compact('members', 'class'));
     }
 
@@ -73,5 +73,17 @@ class IndexController extends Controller
     public function eLearning()
     {
         return view('main/home/eLearning');
+    }
+
+    public function mentor()
+    {
+        $mentors = Mentor::paginate(9);
+        return view('main/home/mentor', compact('mentors'));
+    }
+
+    public function mentor_detail($slug)
+    {
+        $mentor = Mentor::where('slug', $slug)->first();
+        return view('main/home/mentor_detail', compact('mentor'));
     }
 }

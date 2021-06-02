@@ -22,8 +22,10 @@
                 @endforeach
 
 
-               {{$articlies->links()}}
               </div>
+                <div class="d-flex justify-content-center">
+               {{$articlies->links()}}
+             </div>
           </div>
 
 @endsection

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 h1,
 h2,
@@ -232,10 +233,6 @@ a {
   background-color: #f4f8fc;
 }
 
-.body-berita {
-  background-color: #f4f8fc;
-}
-
 .body-berita-kegiatan {
   background-image: url(../img/bg_hijau2.png);
   background-size: 70rem;
@@ -447,6 +444,105 @@ p .tanggal {
   font-size: 14px;
 }
 
+/* iqi */
+
+.header-materi {
+  background-image: url(../img/background_materi.png);
+  background-size: cover;
+  min-height: 340px;
+  background-repeat: no-repeat;
+}
+
+.judul-tugas h1 {
+  color: #ffffff;
+}
+
+.judul-tugas h3 {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.judul-tugas {
+  padding-top: 9%;
+}
+
+.judul-tugas h1,
+.judul-tugas h3 {
+  font-family: "Assistant";
+  font-weight: 500;
+}
+
+.judul-tugas h1 {
+  font-size: 70px;
+}
+
+.judul-tugas h3 {
+  font-size: 40px;
+}
+
+#mentor {
+  background-color: #f4f8fc;
+}
+
+#mentor a {
+  font-family: "Assistant";
+  width: 285px;
+  border-radius: 10px;
+}
+
+.avatar-mentor {
+  width: 90px;
+  height: 90px;
+  display: inline;
+}
+
+.bidang-mentor img {
+  width: 35%;
+  height: 35%;
+}
+
+.bidang-mentor {
+  display: flex;
+}
+
+.card-title {
+  width: 185px;
+}
+
+#mentor {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.divisi {
+  width: 100px;
+  height: 22px;
+  border-radius: 4px;
+  font-family: "assistant";
+  text-align: center;
+  font-size: 0.6rem;
+  padding-top: 4px;
+  color: #fff;
+}
+
+.divisi-Networking {
+  background-image: linear-gradient(to bottom right, #c93837, #fb4949);
+}
+
+.divisi-Multimedia {
+  background-image: linear-gradient(to bottom right, #289b56, #09662f);
+}
+
+.divisi-Programming {
+  background-image: linear-gradient(to bottom right, #041e67, #0b6cdb);
+}
+
+/* iqi */
+
 .item-1,
 .item-2 {
   margin-right: 30px;
@@ -639,4 +735,70 @@ p .tanggal {
   .carousel-fade .active.carousel-item-right {
     transition: none;
   }
+}
+
+/* new one */
+.navbar-light .nav-link {
+  color: #000000 !important;
+}
+
+.navbar-light .btn-1 {
+  color: white !important;
+}
+
+.navbar-light .nav-link.btn-1:hover {
+  color: whitesmoke !important;
+}
+
+.navbar-light .nav-link .btn-1:hover {
+  color: whitesmoke !important;
+}
+
+.navbar-light .nav-link:hover {
+  color: #495057 !important;
+}
+.border-white {
+  border-color: white !important;
+}
+
+.thumnail {
+  height: 300px;
+  position: absolute;
+  z-index: 0;
+}
+
+.mentor-detail {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.badge-mentor {
+  background-color: #004b8f;
+  border-radius: 8px;
+}
+
+.biodata {
+  margin-top: 8rem;
+}
+
+.kontak {
+  margin-top: 8rem;
+}
+
+.biodata .d-flex .h-fit-content,
+.social-media .d-flex .h-fit-content,
+.kontak .d-flex .h-fit-content {
+  width: 25px;
+}
+
+.h-fit-content {
+  height: fit-content !important;
+}
+
+.text-fairplay {
+  font-family: "fairplay display";
+}
+
+.mentor-judul {
+  color: #04185e;
 }

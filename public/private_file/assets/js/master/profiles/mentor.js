@@ -148,8 +148,13 @@ $(document).ready(function() {
                 $('#updateMentor img').attr('src', '/storage/' +res.data.mentor.image);
                 $('#updateMentor select[name="divisions[]"]').val(division)
                 $('#updateMentor select[name="divisions[]"]').select2()
+                $('#updateMentor input[name="facebook"]').val(res.data.mentor.facebook);
+                $('#updateMentor input[name="youtube"]').val(res.data.mentor.youtube);
+                $('#updateMentor input[name="website"]').val(res.data.mentor.website);
+                $('#updateMentor input[name="email"]').val(res.data.mentor.email);
                 $('#updateMentor input[name="whatsapp"]').val(res.data.mentor.whatsapp);
                 $('#updateMentor input[name="instagram"]').val(res.data.mentor.instagram);
+                $('#updateMentor textarea[name="content"]').val(res.data.mentor.content);
                 $('#updateMentor input[name="name"]').data('id',res.data.mentor.id);
             },
             error:err=>console.log(err)

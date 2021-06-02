@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 25 Bulan Mei 2021 pada 15.23
+-- Waktu pembuatan: 29 Bulan Mei 2021 pada 12.48
 -- Versi server: 8.0.23-0ubuntu0.20.04.1
 -- Versi PHP: 7.4.3
 
@@ -114,7 +114,8 @@ INSERT INTO `access_user_menu` (`id`, `user_id`, `menu_id`, `created_by`, `delet
 (101, 1, 11, 1, NULL, '2021-04-20 08:34:31', '2021-04-20 08:34:31'),
 (102, 1, 20, 1, NULL, '2021-04-20 08:41:52', '2021-04-20 08:41:52'),
 (103, 1, 21, 1, NULL, '2021-05-10 04:47:47', '2021-05-10 04:47:47'),
-(104, 1, 22, 1, NULL, '2021-05-25 07:25:45', '2021-05-25 07:25:45');
+(104, 1, 22, 1, NULL, '2021-05-25 07:25:45', '2021-05-25 07:25:45'),
+(105, 1, 23, 1, NULL, '2021-05-28 08:15:27', '2021-05-28 08:15:27');
 
 -- --------------------------------------------------------
 
@@ -292,7 +293,8 @@ INSERT INTO `access_user_submenu` (`id`, `user_id`, `submenu_id`, `created_by`, 
 (103, 1, 34, 1, NULL, '2021-05-10 04:55:00', '2021-05-10 04:55:00'),
 (104, 1, 33, 1, NULL, '2021-05-10 04:55:03', '2021-05-10 04:55:03'),
 (105, 1, 36, 1, NULL, '2021-05-25 05:09:43', '2021-05-25 05:09:43'),
-(106, 1, 37, 1, NULL, '2021-05-25 06:07:27', '2021-05-25 06:07:27');
+(106, 1, 37, 1, NULL, '2021-05-25 06:07:27', '2021-05-25 06:07:27'),
+(107, 1, 38, 1, NULL, '2021-05-28 08:50:30', '2021-05-28 08:50:30');
 
 -- --------------------------------------------------------
 
@@ -585,7 +587,36 @@ INSERT INTO `activities` (`id`, `user_id`, `url_access`, `description`, `browser
 (272, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:21:06', '105252144091'),
 (273, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:21:25', '105252122395'),
 (274, 1, '/api/v1/mentor/delete', 'menghapus data mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:21:42', '10525219965'),
-(275, 1, '/api/v1/trash/mentor/delete', 'menghapus data sampah mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:22:10', '10525214465');
+(275, 1, '/api/v1/trash/mentor/delete', 'menghapus data sampah mentor', 'Mozilla Firefox', NULL, '2021-05-25 08:22:10', '10525214465'),
+(276, 1, '/api/v1/mentor/insert', 'menambah data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:38:48', '105262133972'),
+(277, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:40:47', '105262141854'),
+(278, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:41:54', '105262114157'),
+(279, 1, '/api/v1/mentor/delete', 'menghapus data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:45:18', '105262122766'),
+(280, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:45:52', '105262127770'),
+(281, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:46:32', '105262131424'),
+(282, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:47:18', '105262150171'),
+(283, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:48:27', '105262151479'),
+(284, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-26 06:50:45', '105262146420'),
+(285, 1, '/api/v1/member/update', 'mengedit data member', 'Mozilla Firefox', NULL, '2021-05-28 08:05:15', '105282129788'),
+(286, 1, '/api/v1/menu/insert', 'Menambah data menu', 'Mozilla Firefox', NULL, '2021-05-28 08:15:03', '10528213683'),
+(287, 1, '/api/v1/access/users/change/menu', 'Menambah access menu users', 'Mozilla Firefox', NULL, '2021-05-28 08:15:27', '105282113143'),
+(288, 1, '/api/v1/member/member/insert', 'menambah data member', 'Mozilla Firefox', NULL, '2021-05-28 08:16:27', '10528213179'),
+(289, 1, '/api/v1/member/member/delete', 'menghapus data member', 'Mozilla Firefox', NULL, '2021-05-28 08:18:18', '105282110854'),
+(290, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Mozilla Firefox', NULL, '2021-05-28 08:19:23', '105282114556'),
+(291, 1, '/api/v1/menu/update', 'Memperbaharui data menu', 'Mozilla Firefox', NULL, '2021-05-28 08:19:31', '105282132412'),
+(292, 1, '/api/v1/submenu/update', 'Memperbaharui data submenu', 'Mozilla Firefox', NULL, '2021-05-28 08:20:02', '105282132889'),
+(293, 1, '/api/v1/submenu/insert', 'Menambah data submenu', 'Mozilla Firefox', NULL, '2021-05-28 08:47:07', '105282137815'),
+(294, 1, '/api/v1/access/users/change/submenu', 'Menambah access submenu users', 'Mozilla Firefox', NULL, '2021-05-28 08:50:30', '105282125360'),
+(295, 1, '/api/v1/trash/menu/delete', 'menghapus data sampah menu', 'Mozilla Firefox', NULL, '2021-05-28 08:53:15', '105282127751'),
+(296, 1, '/api/v1/member/insert', 'menambah data member', 'Mozilla Firefox', NULL, '2021-05-28 08:54:10', '10528219122'),
+(297, 1, '/api/v1/member/delete', 'menghapus data member', 'Mozilla Firefox', NULL, '2021-05-28 08:54:15', '10528213830'),
+(298, 1, '/api/v1/trash/memberIT/delete', 'menghapus data sampah member', 'Mozilla Firefox', NULL, '2021-05-28 08:54:50', '105282131374'),
+(299, 1, '/api/v1/member/update', 'mengedit data member', 'Mozilla Firefox', NULL, '2021-05-28 09:01:23', '105282129341'),
+(300, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-28 10:07:34', '105282111203'),
+(301, 1, '/api/v1/division/update', 'mengedit data divisi', 'Mozilla Firefox', NULL, '2021-05-28 10:17:05', '105282127132'),
+(302, 1, '/api/v1/division/update', 'mengedit data divisi', 'Mozilla Firefox', NULL, '2021-05-28 10:17:27', '105282144564'),
+(303, 1, '/api/v1/division/update', 'mengedit data divisi', 'Mozilla Firefox', NULL, '2021-05-28 10:18:07', '105282121682'),
+(304, 1, '/api/v1/mentor/update', 'mengedit data mentor', 'Mozilla Firefox', NULL, '2021-05-28 10:21:36', '105282129389');
 
 -- --------------------------------------------------------
 
@@ -771,13 +802,13 @@ CREATE TABLE `divisions` (
 --
 
 INSERT INTO `divisions` (`id`, `name`, `content`, `image`, `slug`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(1, 'Networking', 'Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang ilmu Jaringan. Buat teman-teman yang jurusan TKJ (Teknik Komputer Jaringan) wajib banget nih masuk Divisi Networking, karena akan sangat nyambung sekali nanti dengan materi TKJ, dalam Divisi Networking, kita akan mempelajari tentang materi-materi jaringan lebih luas lagi agar teman-teman semua lebih siap nanti di dunia kerja. Keuntungan bergabung di Divisi Networking ialah kita bisa membuat sebuah server internet yang dimana nanti akan di implementasikan di dunia kerja, so intinya nanti teman-teman akan diarahkan agar bisa menjadi seorang IT support atau Network Administrator yang handal', 'images/division/2j4FnW9SdxeB80JA9g0i1LWSYObXHXywyGJYHGqD.png', 'networking', NULL, '2021-04-08 20:37:45', '2021-05-20 07:18:49'),
-(2, 'Programming', '<p>Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang ilmu pemograman. Nah, programming itu sendiri berasal dari kata program. Program adalah sebuah urutan logika yang digunakan untuk menghasilkan keluaran tertentu yand disatukan menjadi sebuah sistem utuh yang disebut aplikasi. Dalam Divisi programming, kita akan berkutak pada script-script atau source code maupun bahasi pemograman. Keuntungan bergabung di Divisi Promgramming ialah kita bisa membuat suatu website sendiri, juga mengetahui bahasa pemograman agar bisa menjadi seorang programer yand handal./p>', 'images/division/7WUy28SXa3kv2PQTOPrj7MmgH2doMMnNyVCAHlLU.png', 'programming', NULL, '2021-04-09 22:55:34', '2021-05-20 07:19:53'),
+(1, 'Networking', 'Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang ilmu Jaringan. Buat teman-teman yang jurusan TKJ (Teknik Komputer Jaringan) wajib banget nih masuk Divisi Networking, karena akan sangat nyambung sekali nanti dengan materi TKJ, dalam Divisi Networking, kita akan mempelajari tentang materi-materi jaringan lebih luas lagi agar teman-teman semua lebih siap nanti di dunia kerja. Keuntungan bergabung di Divisi Networking ialah kita bisa membuat sebuah server internet yang dimana nanti akan di implementasikan di dunia kerja, so intinya nanti teman-teman akan diarahkan agar bisa menjadi seorang IT support atau Network Administrator yang handal', 'images/division/5R12yHD9CMIa7fy2dkjDxNudsJbQDcpLszQ8SXbu.png', 'networking', NULL, '2021-04-08 20:37:45', '2021-05-28 10:17:05'),
+(2, 'Programming', '<p>Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang ilmu pemograman. Nah, programming itu sendiri berasal dari kata program. Program adalah sebuah urutan logika yang digunakan untuk menghasilkan keluaran tertentu yand disatukan menjadi sebuah sistem utuh yang disebut aplikasi. Dalam Divisi programming, kita akan berkutak pada script-script atau source code maupun bahasi pemograman. Keuntungan bergabung di Divisi Promgramming ialah kita bisa membuat suatu website sendiri, juga mengetahui bahasa pemograman agar bisa menjadi seorang programer yand handal./p>', 'images/division/zJH23hbzVeAWzc2RUuFDobrvlNc0E74yEMIdMrt8.png', 'programming', NULL, '2021-04-09 22:55:34', '2021-05-28 10:18:07'),
 (3, 'Programming', '<p>programming</p>', 'images/division/Dmn7Tm6VcPnaNhP7EXGUyYNFDaDh8lEkC5LOLegt.png', 'programming', '2021-04-09 22:55:59', '2021-04-09 22:55:35', '2021-04-09 22:55:59'),
 (4, 'Programming', '<p>programming</p>', 'images/division/wTMqLJkcm1VbAcgNIX3NiwHNAnNXzLxRYrAH7Tz6.png', 'programming', '2021-04-09 22:55:57', '2021-04-09 22:55:35', '2021-04-09 22:55:57'),
 (5, 'Programming', '<p>programming</p>', 'images/division/sBmiBSUW3L6ysLqkNaDZu8xvSr1KmADuWMBSJ190.png', 'programming', '2021-04-09 22:55:55', '2021-04-09 22:55:35', '2021-04-09 22:55:55'),
 (6, 'Multimedia', '<p>programming</p>', 'images/division/AGBjIEo8EL2124zVsSryIkV1Irl1X1N49VJUqb5y.png', 'multimedia', '2021-05-20 07:20:11', '2021-04-09 22:56:20', '2021-05-20 07:20:11'),
-(7, 'Multimedia', '<p>Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang desain, perfilman dan masih banyak lagi. Divisi Multimedia adalah suatu sarana (media) yand didalamnya terdapat perpaduan materi seperti Design Graphics, Design 3D, Design Characther, UI/UX, Editing video, dan Games 2D. keuntungan bergabung di Divisi Multimedia ialah kita bisa menjadi seorang desainer, editor, lalu kiga juga bisa terjun di dunia perfilman. Dan satu hal lagi, dalam mempelajari multimedia kita bisa membuka lapangan kerja sendiri. So buat teman-teman yang tertarik di bidang Desain, Editing Video dan Pembuatan Game langsung sajah join ke Divisi Multimedia yah.</p>', 'images/division/ANSDoaPC9ww4OJid9sqNcJNDZbKDuu7RDQgNvUKq.png', 'multimedia', NULL, '2021-05-20 07:21:21', '2021-05-20 07:21:21');
+(7, 'Multimedia', '<p>Divisi Programming adalah suatu satu divisi yang ada IT CLUB yeng mempelajari tentang desain, perfilman dan masih banyak lagi. Divisi Multimedia adalah suatu sarana (media) yand didalamnya terdapat perpaduan materi seperti Design Graphics, Design 3D, Design Characther, UI/UX, Editing video, dan Games 2D. keuntungan bergabung di Divisi Multimedia ialah kita bisa menjadi seorang desainer, editor, lalu kiga juga bisa terjun di dunia perfilman. Dan satu hal lagi, dalam mempelajari multimedia kita bisa membuka lapangan kerja sendiri. So buat teman-teman yang tertarik di bidang Desain, Editing Video dan Pembuatan Game langsung sajah join ke Divisi Multimedia yah.</p>', 'images/division/9UhNAOZAFxZZF68RMCPxW8A0ZBXOJVoGrS3w7j9J.png', 'multimedia', NULL, '2021-05-20 07:21:21', '2021-05-28 10:17:27');
 
 -- --------------------------------------------------------
 
@@ -797,8 +828,13 @@ CREATE TABLE `division_mentor` (
 --
 
 INSERT INTO `division_mentor` (`division_id`, `mentor_id`, `created_at`, `updated_at`) VALUES
+(1, 5, '2021-05-28 17:21:36', NULL),
 (2, 2, '2021-05-25 14:27:14', NULL),
-(7, 2, '2021-05-25 14:27:14', NULL);
+(2, 5, '2021-05-26 13:38:48', NULL),
+(2, 6, '2021-05-26 13:41:54', NULL),
+(7, 2, '2021-05-25 14:27:14', NULL),
+(7, 5, '2021-05-26 13:38:48', NULL),
+(7, 6, '2021-05-26 13:41:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -1025,7 +1061,35 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`id`, `division_id`, `user_id`, `name`, `class`, `image`, `position`, `majors`, `entry_year`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 29, 'ahmad dahlan', '12', 'images/member/QsI4d7NSHfKBC4vQ5egoqploaP3LvlaJlj7W55N0.png', 'Anggota', 'TKJ', '2021-04-09', 1, '2021-04-08 20:40:20', '2021-04-08 20:43:24', NULL);
+(1, 1, 29, 'ahmad dahlan', '12', 'images/member/QsI4d7NSHfKBC4vQ5egoqploaP3LvlaJlj7W55N0.png', 'Anggota', 'TKJ', '2021-04-09', 1, '2021-04-08 20:40:20', '2021-04-08 20:43:24', NULL),
+(2, 2, 27, 'Test', '11', 'images/member/AqCX1EsyxwFtNhzx7M3xMHylWbYqQK6h0JgrUopB.png', 'test', 'KA', '2021-05-11', 1, '2021-05-28 08:16:27', '2021-05-28 08:18:18', '2021-05-28 08:18:18');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `members_it`
+--
+
+CREATE TABLE `members_it` (
+  `id` bigint UNSIGNED NOT NULL,
+  `division_id` bigint DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `position` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `majors` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `entry_year` date DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `members_it`
+--
+
+INSERT INTO `members_it` (`id`, `division_id`, `name`, `class`, `image`, `position`, `majors`, `entry_year`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'Member IT', '12', 'images/memberIT/Bq4vlHUUwls2gT95sovf4xWFvwZjKu07npBMtFbg.png', 'Anggota', 'TKJ', '2021-04-09', '2021-04-08 20:40:20', '2021-05-28 09:01:23', NULL);
 
 -- --------------------------------------------------------
 
@@ -1072,8 +1136,13 @@ CREATE TABLE `mentors` (
   `sertifikasi` varchar(255) DEFAULT NULL,
   `birth_date` date DEFAULT NULL,
   `gender` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `facebook` varchar(255) DEFAULT NULL,
+  `youtube` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `website` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `instagram` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `profession` varchar(255) NOT NULL,
+  `content` text,
   `slug` varchar(255) NOT NULL,
   `created_by` int NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -1085,8 +1154,10 @@ CREATE TABLE `mentors` (
 -- Dumping data untuk tabel `mentors`
 --
 
-INSERT INTO `mentors` (`id`, `name`, `image`, `whatsapp`, `sertifikasi`, `birth_date`, `gender`, `instagram`, `profession`, `slug`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(2, 'Teguh', 'images/mentor/ZnJaxh5pTlWTkbiGPb2bIOrdIZC6lADIJrPDmyd8.png', NULL, 'hmmm', NULL, 'laki-Laki', 'hmm', 'Test', 'teguh', 1, '2021-05-25 14:27:14', '2021-05-25 15:15:10', NULL);
+INSERT INTO `mentors` (`id`, `name`, `image`, `whatsapp`, `sertifikasi`, `birth_date`, `gender`, `email`, `facebook`, `youtube`, `website`, `instagram`, `profession`, `content`, `slug`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(2, 'Teguh', 'images/mentor/ZnJaxh5pTlWTkbiGPb2bIOrdIZC6lADIJrPDmyd8.png', '55', 'hmmm', '2021-05-12', 'laki-Laki', 'hmm@gmail.com', 'hmmm', 'hm', 'hmm', 'hmmtest', 'Test', 'hmm', 'teguh', 1, '2021-05-25 14:27:14', '2021-05-26 13:48:27', NULL),
+(5, 'gyyyy', 'images/mentor/4THhtpVwNRi5WNXLJiCOxKm1R31qq411UaS1wetI.jpg', '2312', 'test', '2021-04-28', 'laki-Laki', 'test@gmail.com', 'tetssssssss', 'testtt', 'testtttt', 'test', 'test', 'testt', 'gyyyy', 1, '2021-05-26 13:38:48', '2021-05-28 17:07:34', NULL),
+(6, 'test', 'images/mentor/cLjuuk45LLMqk3Kh05ldStEC9Hm5UPYearR7Mwtf.png', '2312', 'test', '2021-04-28', 'laki-Laki', NULL, 'testasw', 'ewr', NULL, 'test', 'test', 'dfe', 'test', 1, '2021-05-26 13:41:54', '2021-05-26 13:45:18', NULL);
 
 -- --------------------------------------------------------
 
@@ -1133,7 +1204,7 @@ INSERT INTO `menu` (`id`, `section_id`, `name`, `url`, `icon`, `type`, `comments
 (19, 14, 'Persentase', NULL, 'fas fa-fw fa-desktop', 'dynamic', 'Menu untuk menampung presentase anggota/member', '1', 1, NULL, '2021-04-14 20:40:09', '2021-05-20 06:07:59'),
 (20, 7, 'Petunjuk', '/features/user_guides', 'fas fa-book-open', 'static', 'Menampung tatacara penggunaan website', '1', 1, NULL, '2021-04-20 08:27:49', '2021-05-20 06:08:31'),
 (21, 3, 'Galeri', NULL, 'fas fa-images', 'dynamic', 'Menu untuk menampung data galleries', '1', 1, NULL, '2021-05-10 04:45:50', '2021-05-20 07:32:14'),
-(22, 3, 'Mentors', NULL, 'fas fa-chalkboard-teacher', 'dynamic', NULL, '1', 1, '2021-05-25 07:45:29', '2021-05-25 07:24:23', '2021-05-25 07:45:29');
+(23, 14, 'Anggota', '/members/member', 'fas fa-users', 'static', 'Menu untuk menampung data Anggota \r\nSMKN 5 Bandung', '1', 1, NULL, '2021-05-28 08:15:03', '2021-05-28 08:19:31');
 
 -- --------------------------------------------------------
 
@@ -1454,7 +1525,7 @@ INSERT INTO `submenu` (`id`, `menu_id`, `name`, `url`, `comments`, `status`, `cr
 (24, 16, 'Divisi', '/setting/trash/division', 'Submenu untuk menampung sampah data division', '1', 1, NULL, '2021-05-10 04:50:27', '2021-05-20 08:31:01'),
 (25, 16, 'Icon Divisi', '/setting/trash/imagedivision', 'Submenu untuk menampung sampah data image division', '1', 1, NULL, '2021-05-10 04:50:45', '2021-05-20 08:31:21'),
 (26, 16, 'Prestasi', '/setting/trash/prestation', 'Submenu untuk menampung sampah data prestation', '1', 1, NULL, '2021-05-10 04:51:04', '2021-05-20 08:31:30'),
-(27, 16, 'Anggota', '/setting/trash/member', 'Submenu untuk menampung sampah data member', '1', 1, NULL, '2021-05-10 04:51:21', '2021-05-20 08:31:36'),
+(27, 16, 'Anggota SMKN 5', '/setting/trash/member', 'Submenu untuk menampung sampah data member', '1', 1, NULL, '2021-05-10 04:51:21', '2021-05-28 08:20:01'),
 (28, 16, 'Alumni', '/setting/trash/alumni', 'Submenu untuk menampung sampah data alumni', '1', 1, NULL, '2021-05-10 04:51:38', '2021-05-10 04:51:38'),
 (29, 16, 'Galeri', '/setting/trash/gallery', 'Submenu untuk menampung sampah data gallery', '1', 1, NULL, '2021-05-10 04:51:52', '2021-05-20 08:30:45'),
 (30, 16, 'Foto Galeri', '/setting/trash/imagegallery', 'Submenu untuk menampung sampah data image gallery', '1', 1, NULL, '2021-05-10 04:52:01', '2021-05-20 08:33:32'),
@@ -1464,7 +1535,8 @@ INSERT INTO `submenu` (`id`, `menu_id`, `name`, `url`, `comments`, `status`, `cr
 (34, 16, 'Ujian', '/setting/trash/test', 'Submenu untuk menampung sampah data exam', '1', 1, NULL, '2021-05-10 04:53:36', '2021-05-20 08:32:00'),
 (35, 16, 'Nilai', '/setting/trash/score', 'Submenu untuk menampung sampah data exam score', '1', 1, NULL, '2021-05-10 04:53:56', '2021-05-20 08:32:05'),
 (36, 10, 'Mentor', '/master/profiles/mentor', 'Submenu untuk menampung data mentor', '1', 1, NULL, '2021-05-25 05:08:46', '2021-05-25 07:43:46'),
-(37, 16, 'Mentor', '/setting/trash/mentor', 'Submenu untuk menampung sampah data mentor', '1', 1, NULL, '2021-05-25 06:06:18', '2021-05-25 06:06:18');
+(37, 16, 'Mentor', '/setting/trash/mentor', 'Submenu untuk menampung sampah data mentor', '1', 1, NULL, '2021-05-25 06:06:18', '2021-05-25 06:06:18'),
+(38, 16, 'Anggota IT Club', '/setting/trash/memberIT', 'Submenu untuk menampung sampah data anggota IT CLUB', '1', 1, NULL, '2021-05-28 08:47:07', '2021-05-28 08:47:07');
 
 -- --------------------------------------------------------
 
@@ -1741,6 +1813,12 @@ ALTER TABLE `members`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `members_it`
+--
+ALTER TABLE `members_it`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `member_reg`
 --
 ALTER TABLE `member_reg`
@@ -1857,7 +1935,7 @@ ALTER TABLE `user_guides_decs`
 -- AUTO_INCREMENT untuk tabel `access_user_menu`
 --
 ALTER TABLE `access_user_menu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT untuk tabel `access_user_section`
@@ -1869,13 +1947,13 @@ ALTER TABLE `access_user_section`
 -- AUTO_INCREMENT untuk tabel `access_user_submenu`
 --
 ALTER TABLE `access_user_submenu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
 -- AUTO_INCREMENT untuk tabel `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=276;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=305;
 
 --
 -- AUTO_INCREMENT untuk tabel `alumnies`
@@ -1953,7 +2031,13 @@ ALTER TABLE `list_test`
 -- AUTO_INCREMENT untuk tabel `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `members_it`
+--
+ALTER TABLE `members_it`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `member_reg`
@@ -1965,13 +2049,13 @@ ALTER TABLE `member_reg`
 -- AUTO_INCREMENT untuk tabel `mentors`
 --
 ALTER TABLE `mentors`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
@@ -2025,7 +2109,7 @@ ALTER TABLE `set_access_submenu`
 -- AUTO_INCREMENT untuk tabel `submenu`
 --
 ALTER TABLE `submenu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`

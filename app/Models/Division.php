@@ -23,6 +23,11 @@ class Division extends Model
         return $this->hasMany(Member::class, 'id');
     }
 
+    public function members_it()
+    {
+        return $this->hasMany(MemberIT::class, 'id');
+    }
+
     public function images()
     {
         return $this->hasMany(ImageDivision::class);

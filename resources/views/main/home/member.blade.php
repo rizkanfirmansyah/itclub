@@ -14,7 +14,7 @@
                           <div class="card p-4 text-center gradient-anggota">
                               <div class="card-head">
                                   <h4 class="text-white" style="text-transform: uppercase;">{{$member->position}}</h4>
-                                  <img src="{{$member->image()}}" class="w-100">
+                                  <img src="{{$member->image()}}" class="w-100 ">
                               </div>
                               <div class="card-body">
                                   <h5 class="mb-0 text-white nama-anggota">{{$member->name}}</h5>

@@ -23,6 +23,7 @@ use App\Models\Division;
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                    <a class="dropdown-item" href="{{route('member',11)}}">Anggota</a>
                                 <a class="dropdown-item" href="{{route('alumni')}}">Alumni</a>
+                                 <a class="dropdown-item" href="{{route('mentor')}}">Pembimbing</a>
                                 <a class="dropdown-item" href="{{route('gallery')}}">Galeri Kegiatan</a>
                                 </div>
                             </li>
@@ -49,8 +50,13 @@ use App\Models\Division;
                         <li class="nav-item mx-2 dropdown">
                                 <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fas fa-user mr-2 active"></i></span>{{auth()->user()->name}}</a>
                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{route('dashboard_user')}}">Dashboard</a>
-                                <a class="dropdown-item" href="/api/v1/auth/logout">Logout</a>
+                                <a href="{{route('dashboard_user')}}" class="dropdown-item has-icon">
+                                <i class="fas fa-home"></i> Dashboard
+                            </a>
+                              <div class="dropdown-divider"></div>
+                            <a href="/api/v1/auth/logout" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
                                
                             </div> 
                             </li>

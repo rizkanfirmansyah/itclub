@@ -17,9 +17,12 @@
                             @endforeach
                         </div>
                     </div>
-                    {{$galleries->links()}}
                 </div>
+                <div class="d-flex justify-content-center">
+                    {{$galleries->links()}}
             </div>
+            </div>
+
 @endsection
 
 @section('footer')

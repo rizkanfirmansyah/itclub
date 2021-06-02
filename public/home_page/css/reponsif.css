@@ -662,6 +662,43 @@
     min-width: 122px;
     min-height: 91px;
   }
+
+  .judul-tugas {
+    padding-top: 35%;
+  }
+
+  .judul-tugas h1 {
+    font-size: 45px;
+  }
+
+  .judul-tugas h3 {
+    font-size: 20px;
+  }
+
+  .header-materi {
+    background-image: url(../img/background_materi.png);
+    min-height: 340px;
+    background-position-x: center;
+    background-size: cover;
+  }
+
+  .card {
+    margin-left: -4px;
+    margin-top: 20px;
+  }
+
+  /* new one */
+  .biodata {
+    margin-top: 2rem;
+  }
+  .kontak {
+    margin-top: 0.5rem;
+  }
+  .img-mentor {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 @media (max-width: 354px) {

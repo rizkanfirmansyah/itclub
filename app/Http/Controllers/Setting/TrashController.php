@@ -92,4 +92,9 @@ class TrashController extends Controller
     {
         return view('main.setting.mentor_trash');
     }
+
+     public function memberIT()
+    {
+        return view('main.setting.memberIT_trash');
+    }
 }

@@ -2,14 +2,13 @@ $(document).ready(function() {
     const data = [
         {data:'check', name:'check', orderable:false, searchable:false},
         {data:'name', name:'name'},
-        {data:'user_id', name:'user_id'},
         {data:'division_id', name:'division_id',},
         {data:'class_majors', name:'class_majors'},
         {data:'position', name:'position'},
         {data:'entry_year', name:'entry_year'},
         {data:'imageMember', name:'imageMember'},
         {data:'created_at', name:'created_at', searchable:false, orderable:false},
-        {data:'status', name:'status'},
+     
         {data:'btn', name:'btn', searchable:false, orderable:false},
     ];
 
@@ -138,7 +137,7 @@ $(document).ready(function() {
             },
             success:res=>{
                 $('#updateMember').modal('show');
-                $('#updateMember select[name="user_id"] option[value="'+res.data.user_id+'"]').attr('selected', true);
+              
                 $('#updateMember select[name="division_id"] option[value="'+res.data.division_id+'"]').attr('selected', true);
                 $('#updateMember input[name="name"]').val(res.data.name);
                 $('#updateMember input[name="position"]').val(res.data.position);
